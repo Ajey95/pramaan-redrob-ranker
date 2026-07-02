@@ -202,6 +202,16 @@ streamlit run sandbox/app.py
 
 It accepts up to 100 candidates as JSON or JSONL and returns a ranked CSV with the same columns as the official submission.
 
+For Streamlit Community Cloud, deploy this repository with:
+
+| Setting | Value |
+| --- | --- |
+| Repository | `Ajey95/pramaan-redrob-ranker` |
+| Branch | `master` |
+| Main file path | `streamlit_app.py` |
+
+`streamlit_app.py` is a thin root entrypoint that runs `sandbox/app.py`, which keeps the hosted path simple while preserving the sandbox folder structure.
+
 ## AI Tools Declaration
 
 Codex/ChatGPT was used as an implementation assistant. Optional Anthropic hooks exist for offline JD parsing and reasoning rewrite, but the current cached submission uses deterministic grounded reasoning. The timed ranking step uses only local cached artifacts and performs no network or LLM calls.

@@ -9,6 +9,14 @@ Run locally:
 streamlit run sandbox/app.py
 ```
 
+Streamlit Community Cloud settings:
+
+```text
+Repository: Ajey95/pramaan-redrob-ranker
+Branch: master
+Main file path: streamlit_app.py
+```
+
 The sandbox intentionally uses the fast local scoring path for hosted verification. The full submission cache uses the offline two-stage MiniLM pipeline:
 
 1. BM25 + TF-IDF + JD Fit Gate full-pool recall.
