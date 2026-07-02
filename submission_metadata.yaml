@@ -12,11 +12,11 @@ team_members:
 
 github_repo: "https://github.com/Ajey95/pramaan-redrob-ranker"
 sandbox_link: "TODO"
-reproduce_command: "python rank.py --candidates ../India_runs_data_and_ai_challenge/candidates.jsonl --out submission.csv"
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
 compute:
   platform: "Windows local workstation"
-  cpu_cores: 0
+  cpu_cores: 18
   ram_gb: 16
   python_version: "3.12.13"
   os: "Windows"
@@ -32,7 +32,7 @@ ai_usage_summary: |
   Used Codex/ChatGPT as an implementation assistant. The timed ranking step uses only cached local features and makes no LLM or network calls.
 
 methodology_summary: |
-  Two-phase CPU ranker. Offline scripts parse the fixed JD, score candidate career-history evidence with BM25 plus TF-IDF full-pool recall, run all-MiniLM-L6-v2 semantic scoring on the top-1000 shortlist, fuse rankings with reciprocal-rank fusion, apply explicit JD Fit Gate penalties, then multiply by Redrob hireability signals. The timed rank.py script scans candidate IDs, filters a pre-sorted runtime ranking cache, attaches deterministic cached reasonings, and writes the top-100 CSV without model inference, pandas, network, or LLM calls.
+  Two-phase CPU ranker. Offline scripts parse the fixed JD, score candidate career-history evidence with BM25 plus TF-IDF full-pool recall, run all-MiniLM-L6-v2 semantic scoring on the top-1000 shortlist, fuse rankings with reciprocal-rank fusion, apply explicit JD Fit Gate penalties, then multiply by Redrob hireability signals. The timed rank.py script scans candidate IDs, filters a pre-sorted runtime ranking cache, attaches deterministic cached reasonings, and writes the top-100 CSV without model inference, pandas, network, or LLM calls. Latest local full-100k timed run: 2.31 seconds, validator passing.
 
 declarations:
   read_submission_spec: true

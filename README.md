@@ -19,13 +19,31 @@ The design follows the JD's main warning: **career-history evidence beats skills
 | --- | --- |
 | Final CSV | `submission.csv` generated |
 | Organizer validator | Passing |
-| Timed ranking step | 2.31 seconds on full 100k local run |
+| Timed ranking step | 2.31 seconds on the full 100,000-candidate file |
 | Offline dense model | Two-stage `all-MiniLM-L6-v2` on top 1,000 shortlist |
 | Full-pool recall | BM25 + TF-IDF + JD/rule features |
 | Reasoning cache | 150 candidates |
 | Network in `rank.py` | None |
 | GPU in `rank.py` | None |
 | Sandbox app | Streamlit small-sample app included |
+
+## Submission Deliverables
+
+| Deliverable | Ready? | Notes |
+| --- | --- | --- |
+| Ranking upload | Yes | Submit `submission.csv`; the spec requires CSV, not JSON. |
+| Portal metadata | Needs final personal fields | `submission_metadata.yaml` mirrors the portal fields, but team/contact and sandbox URL must be filled before upload. |
+| GitHub repository | Yes | `https://github.com/Ajey95/pramaan-redrob-ranker` |
+| Sandbox/demo link | Hosted app required | Streamlit Cloud should use `streamlit_app.py`; paste the final app URL into the portal and metadata file. |
+| Code reproduction command | Yes | `python rank.py --candidates ./candidates.jsonl --out ./submission.csv` |
+
+No separate ranking JSON is required by the organizer spec. The JSON files in `cache/` are internal validated reproduction artifacts:
+
+| JSON artifact | Status | Purpose |
+| --- | --- | --- |
+| `cache/jd_structured.json` | Validated | Structured fixed-JD criteria used by the offline pipeline |
+| `cache/feature_manifest.json` | Validated | Feature-cache provenance for the 100,000-candidate run |
+| `cache/reasoning_cache.json` | Validated | Grounded reasonings for the top 150 safety margin |
 
 ## System Architecture
 
@@ -105,6 +123,13 @@ Run the timed submission step:
 Expected validator output:
 
 ```text
+Submission is valid.
+```
+
+Latest local timing on the full released 100,000-row `candidates.jsonl`:
+
+```text
+rank_seconds=2.31
 Submission is valid.
 ```
 
