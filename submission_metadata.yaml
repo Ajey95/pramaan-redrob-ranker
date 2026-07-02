@@ -10,7 +10,7 @@ team_members:
     email: "TODO"
     role: "TODO"
 
-github_repo: "TODO - create/push GitHub repo"
+github_repo: "https://github.com/Ajey95/pramaan-redrob-ranker"
 sandbox_link: "TODO"
 reproduce_command: "python rank.py --candidates ../India_runs_data_and_ai_challenge/candidates.jsonl --out submission.csv"
 
