@@ -6,6 +6,9 @@ primary_contact:
   phone: "6302961169"
 
 team_members:
+  - name: "V Ajay Bhargava Jashwanth Reddy"
+    email: "983617reddy@gmail.com"
+    role: "Primary Contact"
   - name: "Ashish M"
     email: "ashish007tup@gmail.com"
     role: "Developer"

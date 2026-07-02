@@ -32,9 +32,9 @@ The design follows the JD's main warning: **career-history evidence beats skills
 | Deliverable | Ready? | Notes |
 | --- | --- | --- |
 | Ranking upload | Yes | Submit `submission.csv`; the spec requires CSV, not JSON. |
-| Portal metadata | Needs final personal fields | `submission_metadata.yaml` mirrors the portal fields, but team/contact and sandbox URL must be filled before upload. |
+| Portal metadata | Yes | `submission_metadata.yaml` is filled for team Harley, primary contact, team members, compute, AI usage, and declarations. |
 | GitHub repository | Yes | `https://github.com/Ajey95/pramaan-redrob-ranker` |
-| Sandbox/demo link | Hosted app required | Streamlit Cloud should use `streamlit_app.py`; paste the final app URL into the portal and metadata file. |
+| Sandbox/demo link | Yes | `https://pramaan-redrob-ranker.streamlit.app/` |
 | Code reproduction command | Yes | `python rank.py --candidates ./candidates.jsonl --out ./submission.csv` |
 
 No separate ranking JSON is required by the organizer spec. The JSON files in `cache/` are internal validated reproduction artifacts:
