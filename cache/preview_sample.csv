@@ -1,0 +1,1030 @@
+candidate_id,current_title,current_company,current_industry,location,country,years_of_experience,career_text,skills_text,jd_fit_gate_score,career_evidence_score,jd_keyword_score,title_score,experience_score,location_score,product_ml_signal,hireability_modifier,consistency_modifier,ai_term_count,career_ai_term_count,system_evidence_count,ranking_system_evidence,trendy_framework_count,expert_zero_duration_count,last_active_days,recruiter_response_rate,interview_completion_rate,offer_acceptance_rate,notice_period_days,open_to_work_flag,willing_to_relocate,dense_score,bm25_score,rrf_score,dense_rank,bm25_rank,skill_match_score,final_score,flags_json,evidence_json
+CAND_0000031,Recommendation Systems Engineer,Swiggy,Food Delivery,"Hyderabad, Telangana",India,6.0,"Role 1
+Company: Swiggy
+Title: Recommendation Systems Engineer
+Industry: Food Delivery
+Duration months: 14
+Current: True
+Description: Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM. Designed features across three families: content metadata, user behavior signals, and item engagement history. Owned the offline-online correlation analysis that determined which offline metrics actually predicted A/B test outcomes. Worked closely with PMs to define the optimization target (click-through vs. dwell time vs. downstream conversion) — that work was as important as the modeling itself.
+Role 2
+Company: Mad Street Den
+Title: Search Engineer
+Industry: AI/ML
+Duration months: 16
+Current: False
+Description: Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM. Designed features across three families: content metadata, user behavior signals, and item engagement history. Owned the offline-online correlation analysis that determined which offline metrics actually predicted A/B test outcomes. Worked closely with PMs to define the optimization target (click-through vs. dwell time vs. downstream conversion) — that work was as important as the modeling itself.
+Role 3
+Company: Uber
+Title: NLP Engineer
+Industry: Transportation
+Duration months: 27
+Current: False
+Description: Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM. Designed features across three families: content metadata, user behavior signals, and item engagement history. Owned the offline-online correlation analysis that determined which offline metrics actually predicted A/B test outcomes. Worked closely with PMs to define the optimization target (click-through vs. dwell time vs. downstream conversion) — that work was as important as the modeling itself.
+Role 4
+Company: Zomato
+Title: Applied ML Engineer
+Industry: Food Delivery
+Duration months: 13
+Current: False
+Description: Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months. Designed the relevance labeling pipeline (mix of click-through data and explicit human judgments), the feature pipeline, and the training/eval workflow. Most of the work was infrastructure and data quality — the modeling part was almost the easy bit. Final model improved revenue-per-search by 12%.","Go, MLflow, FAISS, Pinecone, Angular, Image Classification, Machine Learning, Speech Recognition, BentoML, MLOps, Embeddings, Information Retrieval, Hugging Face Transformers, Feature Engineering, Sentence Transformers, scikit-learn, Marketing",1.0,1.0,0.495,0.58,0.88,1.0,1.0,1.1015073333333332,0.82,11,5,6,3,0,0,39,0.91,0.6,0.38,60,True,True,1.0,1.0,1.0,1,1,0.8655,0.7817507695399999,[],"{""current_duration_months"": 14, ""top_skills"": [""Go"", ""MLflow"", ""FAISS"", ""Pinecone"", ""Angular"", ""Image Classification"", ""Machine Learning"", ""Speech Recognition""], ""career_excerpt"": ""Role 1 Company: Swiggy Title: Recommendation Systems Engineer Industry: Food Delivery Duration months: 14 Current: True Description: Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM. Designed features across three families: c""}"
+CAND_0000001,Backend Engineer,Mindtree,IT Services,Toronto,Canada,6.9,"Role 1
+Company: Mindtree
+Title: Backend Engineer
+Industry: IT Services
+Duration months: 27
+Current: True
+Description: Implemented streaming data pipelines on Kafka and Spark Streaming for a real-time user-activity processing platform. Designed the schema-registry integration, the watermark/state management approach, and the deduplication logic for late-arriving events. Worked closely with the data science team to make sure feature pipelines aligned with what their models needed. Most of my career has been data engineering, with some adjacent ML exposure.
+Role 2
+Company: Dunder Mifflin
+Title: Analytics Engineer
+Industry: Paper Products
+Duration months: 55
+Current: False
+Description: Built and maintained data pipelines on Apache Airflow processing ~500GB of daily transactional data across 12 source systems. Worked extensively with Spark (PySpark) for batch processing and dbt for the transformation/modeling layer in our Snowflake warehouse. Owned the on-call rotation for data quality issues — wrote most of the data quality checks that detect schema drift and unusual volume changes. The pipeline supports the analytics team and a few internal ML models.","Tailwind, NLP, Image Classification, Fine-tuning LLMs, Weights & Biases, Speech Recognition, Photoshop, TTS, LoRA, Apache Beam, AWS, Flask, BentoML, Milvus, GANs, Statistical Modeling, GCP",1.0,0.11000000000000001,0.315,0.58,0.9857142857142858,0.25,0.36,1.023659111111111,0.82,7,1,1,0,0,0,43,0.34,0.71,0.58,60,True,False,0.46048797760489496,0.4282569851248774,0.939350864723999,7,3,0.5322052594171996,0.4467333454826084,[],"{""current_duration_months"": 27, ""top_skills"": [""Tailwind"", ""NLP"", ""Image Classification"", ""Fine-tuning LLMs"", ""Weights & Biases"", ""Speech Recognition"", ""Photoshop"", ""TTS""], ""career_excerpt"": ""Role 1 Company: Mindtree Title: Backend Engineer Industry: IT Services Duration months: 27 Current: True Description: Implemented streaming data pipelines on Kafka and Spark Streaming for a real-time user-activity processing platform. Designed the schema-registry integration, the""}"
+CAND_0000015,Software Engineer,Razorpay,Fintech,"Trivandrum, Kerala",India,5.4,"Role 1
+Company: Razorpay
+Title: Software Engineer
+Industry: Fintech
+Duration months: 31
+Current: True
+Description: Cloud infrastructure and DevOps work at an enterprise SaaS company. Owned the AWS account architecture (VPC, IAM, networking), the Terraform modules for our service deployments, and the Kubernetes cluster operations. Designed the CI/CD pipelines (GitLab CI + ArgoCD) and the monitoring stack (Prometheus, Grafana, Loki). Strong on the infra and ops side; haven't done much application development.
+Role 2
+Company: Hooli
+Title: Mobile Developer
+Industry: Software
+Duration months: 24
+Current: False
+Description: Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering.
+Role 3
+Company: Globex Inc
+Title: DevOps Engineer
+Industry: Manufacturing
+Duration months: 9
+Current: False
+Description: Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the customer onboarding flow which involved orchestrating multiple downstream services. Solid on the Spring ecosystem, transaction handling, and the operational side of Java services. Looking to either go deeper on distributed systems or expand into modern application stacks.","PyTorch, Content Writing, Weights & Biases, Qdrant, Sales, Figma, BigQuery, Computer Vision, Next.js, SEO",1.0,0.14,0.105,0.58,0.88,0.65,0.36,0.9990197222222221,1.0,2,0,2,0,1,0,140,0.32,0.72,-1.0,90,True,False,0.07519906843090333,0.11803443205661347,0.6520927601809955,44,25,0.4466278280542987,0.44619000871951986,[],"{""current_duration_months"": 31, ""top_skills"": [""PyTorch"", ""Content Writing"", ""Weights & Biases"", ""Qdrant"", ""Sales"", ""Figma"", ""BigQuery"", ""Computer Vision""], ""career_excerpt"": ""Role 1 Company: Razorpay Title: Software Engineer Industry: Fintech Duration months: 31 Current: True Description: Cloud infrastructure and DevOps work at an enterprise SaaS company. Owned the AWS account architecture (VPC, IAM, networking), the Terraform modules for our service ""}"
+CAND_0000010,Data Engineer,Ola,Transportation,London,UK,4.6,"Role 1
+Company: Ola
+Title: Data Engineer
+Industry: Transportation
+Duration months: 55
+Current: True
+Description: Mixed data science and analytics-engineering role at a marketing-analytics startup. Spent maybe 30% of my time on lightweight ML (clustering, classification, churn prediction in sklearn/XGBoost) and 70% on data infrastructure and dashboards. Comfortable with the modeling work but I wouldn't call myself an ML specialist. Built our experimentation framework that supports the product team's A/B tests.","GCP, Spring Boot, Kubeflow, Java, GANs, Figma, Elasticsearch, OpenCV, CNN, Azure, Prompt Engineering, Object Detection, MLOps, Python, BM25, Weights & Biases, Sales",1.0,0.18000000000000002,0.27,0.72,0.657142857142857,0.25,0.44,0.9240586944444444,0.82,6,1,2,0,0,0,64,0.4,0.53,-1.0,120,False,False,0.4772133540963324,0.6066332264407223,0.9540566959921798,6,2,0.5553170087976539,0.4207793183249303,[],"{""current_duration_months"": 55, ""top_skills"": [""GCP"", ""Spring Boot"", ""Kubeflow"", ""Java"", ""GANs"", ""Figma"", ""Elasticsearch"", ""OpenCV""], ""career_excerpt"": ""Role 1 Company: Ola Title: Data Engineer Industry: Transportation Duration months: 55 Current: True Description: Mixed data science and analytics-engineering role at a marketing-analytics startup. Spent maybe 30% of my time on lightweight ML (clustering, classification, churn pre""}"
+CAND_0000043,Cloud Engineer,Swiggy,Food Delivery,"Chandigarh, Chandigarh",India,8.3,"Role 1
+Company: Swiggy
+Title: Cloud Engineer
+Industry: Food Delivery
+Duration months: 30
+Current: True
+Description: Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup using Locust. Worked closely with developers on testability patterns and with product on acceptance criteria. Recent work has been on shifting test responsibility into the dev team — moving from QA-as-gate to QA-as-coach. Career has been entirely in QA/test engineering.
+Role 2
+Company: HCL
+Title: .NET Developer
+Industry: IT Services
+Duration months: 24
+Current: False
+Description: Cloud infrastructure and DevOps work at an enterprise SaaS company. Owned the AWS account architecture (VPC, IAM, networking), the Terraform modules for our service deployments, and the Kubernetes cluster operations. Designed the CI/CD pipelines (GitLab CI + ArgoCD) and the monitoring stack (Prometheus, Grafana, Loki). Strong on the infra and ops side; haven't done much application development.
+Role 3
+Company: Mindtree
+Title: Frontend Engineer
+Industry: IT Services
+Duration months: 25
+Current: False
+Description: Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering.
+Role 4
+Company: Initech
+Title: DevOps Engineer
+Industry: Software
+Duration months: 20
+Current: False
+Description: Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering.","Elasticsearch, OpenSearch, Airflow, Kubeflow, Fine-tuning LLMs, Haystack, OpenCV, TensorFlow, PEFT, LangChain, Weights & Biases, Reinforcement Learning, Deep Learning, Image Classification, Node.js, Project Management, Feature Engineering",1.0,0.14,0.30000000000000004,0.24,0.88,1.0,0.36,0.8641749999999999,1.0,6,0,2,0,2,0,182,0.04,0.72,-1.0,120,False,True,0.313227235031735,0.22675944648847432,0.799104124408384,27,8,0.46653123732251517,0.40316463201318453,[],"{""current_duration_months"": 30, ""top_skills"": [""Elasticsearch"", ""OpenSearch"", ""Airflow"", ""Kubeflow"", ""Fine-tuning LLMs"", ""Haystack"", ""OpenCV"", ""TensorFlow""], ""career_excerpt"": ""Role 1 Company: Swiggy Title: Cloud Engineer Industry: Food Delivery Duration months: 30 Current: True Description: Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup usin""}"
+CAND_0000023,Software Engineer,Acme Corp,Manufacturing,New York,USA,3.7,"Role 1
+Company: Acme Corp
+Title: Software Engineer
+Industry: Manufacturing
+Duration months: 14
+Current: True
+Description: Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup using Locust. Worked closely with developers on testability patterns and with product on acceptance criteria. Recent work has been on shifting test responsibility into the dev team — moving from QA-as-gate to QA-as-coach. Career has been entirely in QA/test engineering.
+Role 2
+Company: Flipkart
+Title: Frontend Engineer
+Industry: E-commerce
+Duration months: 30
+Current: False
+Description: Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering.","BigQuery, Marketing, Node.js, Django, Salesforce CRM, MongoDB, ETL, Redis, Illustrator, Rust",1.0,0.07,0.045,0.58,0.5285714285714286,0.25,0.28,1.0437591666666666,1.0,1,0,1,0,0,0,87,0.57,0.9,-1.0,30,False,False,0.32689896190216505,0.07262534225003217,0.6851782128514057,23,36,0.3849534638554217,0.40179870663918166,[],"{""current_duration_months"": 14, ""top_skills"": [""BigQuery"", ""Marketing"", ""Node.js"", ""Django"", ""Salesforce CRM"", ""MongoDB"", ""ETL"", ""Redis""], ""career_excerpt"": ""Role 1 Company: Acme Corp Title: Software Engineer Industry: Manufacturing Duration months: 14 Current: True Description: Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setu""}"
+CAND_0000048,Mobile Developer,CRED,Fintech,"Hyderabad, Telangana",India,9.7,"Role 1
+Company: CRED
+Title: Mobile Developer
+Industry: Fintech
+Duration months: 28
+Current: True
+Description: Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a legacy AngularJS app. Strong on the frontend craft — accessibility, performance, animations — but limited backend exposure.
+Role 2
+Company: Cognizant
+Title: Full Stack Developer
+Industry: IT Services
+Duration months: 20
+Current: False
+Description: Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering.
+Role 3
+Company: Stark Industries
+Title: Mobile Developer
+Industry: Manufacturing
+Duration months: 51
+Current: False
+Description: Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the customer onboarding flow which involved orchestrating multiple downstream services. Solid on the Spring ecosystem, transaction handling, and the operational side of Java services. Looking to either go deeper on distributed systems or expand into modern application stacks.
+Role 4
+Company: Initech
+Title: Full Stack Developer
+Industry: Software
+Duration months: 15
+Current: False
+Description: Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering.","Hadoop, Terraform, Vue.js, Content Writing, AWS",1.0,0.07,0.06,0.15,0.62,1.0,0.28,0.9995116666666666,1.0,1,0,1,0,1,0,87,0.65,0.42,0.4,120,True,False,0.041369120372280695,0.03682239819762422,0.5701432564640111,48,46,0.3184429769392033,0.318287470618798,[],"{""current_duration_months"": 28, ""top_skills"": [""Hadoop"", ""Terraform"", ""Vue.js"", ""Content Writing"", ""AWS""], ""career_excerpt"": ""Role 1 Company: CRED Title: Mobile Developer Industry: Fintech Duration months: 28 Current: True Description: Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch a""}"
+CAND_0000032,.NET Developer,Cognizant,IT Services,"Gurgaon, Haryana",India,8.1,"Role 1
+Company: Cognizant
+Title: .NET Developer
+Industry: IT Services
+Duration months: 28
+Current: True
+Description: Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the customer onboarding flow which involved orchestrating multiple downstream services. Solid on the Spring ecosystem, transaction handling, and the operational side of Java services. Looking to either go deeper on distributed systems or expand into modern application stacks.
+Role 2
+Company: HCL
+Title: Cloud Engineer
+Industry: IT Services
+Duration months: 27
+Current: False
+Description: Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup using Locust. Worked closely with developers on testability patterns and with product on acceptance criteria. Recent work has been on shifting test responsibility into the dev team — moving from QA-as-gate to QA-as-coach. Career has been entirely in QA/test engineering.
+Role 3
+Company: Globex Inc
+Title: Mobile Developer
+Industry: Manufacturing
+Duration months: 40
+Current: False
+Description: Full-stack web application development at a SaaS company. Built React-based admin interfaces and the Node.js REST API backing them. Worked across the stack: frontend components, REST endpoint design, PostgreSQL schema, deployment via Docker/Kubernetes. Comfortable in most parts of a typical web stack though my comfort zone is the backend and database side. Recent learning has been on the testing and CI/CD discipline.","Speech Recognition, Project Management, REST APIs, CSS, Embeddings, Hadoop, Spark, Python, Data Pipelines, OpenCV",0.7,0.0,0.195,0.15,0.88,1.0,0.0,0.93021625,1.0,4,0,0,0,1,0,185,0.69,0.78,0.25,150,False,True,0.43228385588982443,0.3260609091484041,0.9049450549450548,10,5,0.42958351648351645,0.27972389743557685,"[""penalty_weak_product_ml_signal""]","{""current_duration_months"": 28, ""top_skills"": [""Speech Recognition"", ""Project Management"", ""REST APIs"", ""CSS"", ""Embeddings"", ""Hadoop"", ""Spark"", ""Python""], ""career_excerpt"": ""Role 1 Company: Cognizant Title: .NET Developer Industry: IT Services Duration months: 28 Current: True Description: Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the customer""}"
+CAND_0000038,Java Developer,Swiggy,Food Delivery,"Coimbatore, Tamil Nadu",India,6.7,"Role 1
+Company: Swiggy
+Title: Java Developer
+Industry: Food Delivery
+Duration months: 31
+Current: True
+Description: Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a legacy AngularJS app. Strong on the frontend craft — accessibility, performance, animations — but limited backend exposure.
+Role 2
+Company: Globex Inc
+Title: .NET Developer
+Industry: Manufacturing
+Duration months: 14
+Current: False
+Description: Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the customer onboarding flow which involved orchestrating multiple downstream services. Solid on the Spring ecosystem, transaction handling, and the operational side of Java services. Looking to either go deeper on distributed systems or expand into modern application stacks.
+Role 3
+Company: Hooli
+Title: DevOps Engineer
+Industry: Software
+Duration months: 34
+Current: False
+Description: Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a legacy AngularJS app. Strong on the frontend craft — accessibility, performance, animations — but limited backend exposure.","Kubeflow, Django, Redux, Weaviate, PowerPoint, Figma, Docker, GraphQL, Agile, MLOps, Azure",0.7,0.0,0.105,0.15,0.9571428571428572,1.0,0.2,1.0114778333333332,1.0,2,0,0,0,1,0,93,0.2,0.75,-1.0,90,True,True,0.0562469569263082,0.11101550608824924,0.6304324782700869,46,29,0.34362974348102604,0.24330170788355407,"[""penalty_weak_product_ml_signal""]","{""current_duration_months"": 31, ""top_skills"": [""Kubeflow"", ""Django"", ""Redux"", ""Weaviate"", ""PowerPoint"", ""Figma"", ""Docker"", ""GraphQL""], ""career_excerpt"": ""Role 1 Company: Swiggy Title: Java Developer Industry: Food Delivery Duration months: 31 Current: True Description: Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scr""}"
+CAND_0000035,Full Stack Developer,Globex Inc,Manufacturing,"Hyderabad, Telangana",India,4.3,"Role 1
+Company: Globex Inc
+Title: Full Stack Developer
+Industry: Manufacturing
+Duration months: 33
+Current: True
+Description: Full-stack web application development at a SaaS company. Built React-based admin interfaces and the Node.js REST API backing them. Worked across the stack: frontend components, REST endpoint design, PostgreSQL schema, deployment via Docker/Kubernetes. Comfortable in most parts of a typical web stack though my comfort zone is the backend and database side. Recent learning has been on the testing and CI/CD discipline.
+Role 2
+Company: Wipro
+Title: Software Engineer
+Industry: IT Services
+Duration months: 18
+Current: False
+Description: Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a legacy AngularJS app. Strong on the frontend craft — accessibility, performance, animations — but limited backend exposure.","Snowflake, BigQuery, Recommendation Systems, Data Pipelines, Docker, MongoDB, PostgreSQL, Sales, Kafka, Speech Recognition, BentoML, Go, Next.js, dbt",0.7,0.0,0.09,0.15,0.62,1.0,0.2,0.9173813888888889,0.82,2,0,0,0,0,0,146,0.34,0.5,-1.0,60,False,False,0.34097172618971217,0.2771427385661601,0.8364738805970149,20,7,0.3803421641791045,0.20027940430306113,"[""penalty_weak_product_ml_signal""]","{""current_duration_months"": 33, ""top_skills"": [""Snowflake"", ""BigQuery"", ""Recommendation Systems"", ""Data Pipelines"", ""Docker"", ""MongoDB"", ""PostgreSQL"", ""Sales""], ""career_excerpt"": ""Role 1 Company: Globex Inc Title: Full Stack Developer Industry: Manufacturing Duration months: 33 Current: True Description: Full-stack web application development at a SaaS company. Built React-based admin interfaces and the Node.js REST API backing them. Worked across the stac""}"
+CAND_0000020,Mechanical Engineer,Wipro,IT Services,"Ahmedabad, Gujarat",India,6.3,"Role 1
+Company: Wipro
+Title: Mechanical Engineer
+Industry: IT Services
+Duration months: 36
+Current: True
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.
+Role 2
+Company: Stark Industries
+Title: Graphic Designer
+Industry: Manufacturing
+Duration months: 33
+Current: False
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.
+Role 3
+Company: Dunder Mifflin
+Title: Civil Engineer
+Industry: Paper Products
+Duration months: 6
+Current: False
+Description: Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords. Managed a freelance writer pool and the editorial calendar. Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality.","GraphQL, TypeScript, Flask, Weights & Biases, GCP, Salesforce CRM, HTML",0.18,0.35,0.135,0.58,0.9,0.65,0.52,0.9722225,1.0,3,3,1,1,0,0,270,0.55,0.71,-1.0,30,False,False,0.319899865411946,0.14104995199085088,0.7549274255156608,25,17,0.5448782276546983,0.09535371708348359,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 36, ""top_skills"": [""GraphQL"", ""TypeScript"", ""Flask"", ""Weights & Biases"", ""GCP"", ""Salesforce CRM"", ""HTML""], ""career_excerpt"": ""Role 1 Company: Wipro Title: Mechanical Engineer Industry: IT Services Duration months: 36 Current: True Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed""}"
+CAND_0000022,Mechanical Engineer,Hooli,Software,Sydney,Australia,1.1,"Role 1
+Company: Hooli
+Title: Mechanical Engineer
+Industry: Software
+Duration months: 13
+Current: True
+Description: Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords. Managed a freelance writer pool and the editorial calendar. Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality.","OpenCV, Django, Terraform, Scrum, SQL, Java, AWS, Six Sigma",0.18,0.35,0.135,0.58,0.15714285714285714,0.25,0.52,0.9773191666666666,1.0,3,3,1,1,0,0,60,0.27,0.45,-1.0,150,True,False,0.5717018545840636,0.16072141140923948,0.8962891462891462,3,14,0.5152867438867438,0.09064793000335905,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 13, ""top_skills"": [""OpenCV"", ""Django"", ""Terraform"", ""Scrum"", ""SQL"", ""Java"", ""AWS"", ""Six Sigma""], ""career_excerpt"": ""Role 1 Company: Hooli Title: Mechanical Engineer Industry: Software Duration months: 13 Current: True Description: Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ""}"
+CAND_0000026,Graphic Designer,Initech,Software,"Kochi, Kerala",India,6.8,"Role 1
+Company: Initech
+Title: Graphic Designer
+Industry: Software
+Duration months: 43
+Current: True
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.
+Role 2
+Company: Acme Corp
+Title: Accountant
+Industry: Manufacturing
+Duration months: 20
+Current: False
+Description: Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords. Managed a freelance writer pool and the editorial calendar. Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality.
+Role 3
+Company: Acme Corp
+Title: Project Manager
+Industry: Manufacturing
+Duration months: 17
+Current: False
+Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders.","Apache Beam, Kubeflow, Scrum, ETL, Django, Docker, Airflow, Kubernetes",0.18,0.35,0.135,0.05,0.9714285714285714,0.65,0.52,0.97357,1.0,3,3,1,1,0,0,272,0.59,0.49,-1.0,30,False,False,0.5265773893071898,0.20208281987812743,0.9112597547380157,5,9,0.5013779264214047,0.08786277140869565,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 43, ""top_skills"": [""Apache Beam"", ""Kubeflow"", ""Scrum"", ""ETL"", ""Django"", ""Docker"", ""Airflow"", ""Kubernetes""], ""career_excerpt"": ""Role 1 Company: Initech Title: Graphic Designer Industry: Software Duration months: 43 Current: True Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and t""}"
+CAND_0000024,HR Manager,TCS,IT Services,"Trivandrum, Kerala",India,7.5,"Role 1
+Company: TCS
+Title: HR Manager
+Industry: IT Services
+Duration months: 38
+Current: True
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.
+Role 2
+Company: Infosys
+Title: Accountant
+Industry: IT Services
+Duration months: 51
+Current: False
+Description: Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords. Managed a freelance writer pool and the editorial calendar. Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality.","Figma, Kubernetes, Forecasting, ETL, Node.js, Docker",0.18,0.35,0.135,0.05,0.9285714285714286,1.0,0.52,0.9939526944444443,1.0,3,3,1,1,0,0,163,0.78,0.72,-1.0,60,False,True,0.37067056724771447,0.1324872287046353,0.7927426160337553,15,19,0.4803227848101266,0.08593526270971517,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 38, ""top_skills"": [""Figma"", ""Kubernetes"", ""Forecasting"", ""ETL"", ""Node.js"", ""Docker""], ""career_excerpt"": ""Role 1 Company: TCS Title: HR Manager Industry: IT Services Duration months: 38 Current: True Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of ""}"
+CAND_0000007,Civil Engineer,Wipro,IT Services,"Gurgaon, Haryana",India,5.5,"Role 1
+Company: Wipro
+Title: Civil Engineer
+Industry: IT Services
+Duration months: 38
+Current: True
+Description: Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social. Led the recent rebrand and managed a small external agency for production work. Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design.
+Role 2
+Company: Initech
+Title: Mechanical Engineer
+Industry: Software
+Duration months: 27
+Current: False
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.","Content Writing, MongoDB, Sales, Spark, Scrum, Apache Beam, Illustrator",0.18,0.07,0.0,0.58,0.88,1.0,0.28,1.020080138888889,1.0,0,0,1,0,0,0,38,0.62,0.47,-1.0,30,False,True,0.3329411644727688,0.07622962268005005,0.704500199123855,21,33,0.4483500597371564,0.08232353841735363,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 38, ""top_skills"": [""Content Writing"", ""MongoDB"", ""Sales"", ""Spark"", ""Scrum"", ""Apache Beam"", ""Illustrator""], ""career_excerpt"": ""Role 1 Company: Wipro Title: Civil Engineer Industry: IT Services Duration months: 38 Current: True Description: Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative acro""}"
+CAND_0000002,Operations Manager,Wipro,IT Services,"Chennai, Tamil Nadu",India,12.5,"Role 1
+Company: Wipro
+Title: Operations Manager
+Industry: IT Services
+Duration months: 43
+Current: True
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.
+Role 2
+Company: Wipro
+Title: Operations Manager
+Industry: IT Services
+Duration months: 14
+Current: False
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.
+Role 3
+Company: Acme Corp
+Title: Marketing Manager
+Industry: Manufacturing
+Duration months: 54
+Current: False
+Description: Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords. Managed a freelance writer pool and the editorial calendar. Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality.
+Role 4
+Company: Dunder Mifflin
+Title: Marketing Manager
+Industry: Paper Products
+Duration months: 38
+Current: False
+Description: Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social. Led the recent rebrand and managed a small external agency for production work. Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design.","Project Management, React, Photoshop, TypeScript, Marketing, Kafka, JavaScript, Feature Engineering, GCP",0.18,0.42000000000000004,0.135,0.05,0.2142857142857143,0.65,0.6000000000000001,0.99198125,1.0,3,3,2,1,0,0,232,0.29,0.62,-1.0,60,True,False,0.5370093033155136,0.15579458270210877,0.8778782894736842,4,16,0.45936348684210526,0.08202239385875823,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 43, ""top_skills"": [""Project Management"", ""React"", ""Photoshop"", ""TypeScript"", ""Marketing"", ""Kafka"", ""JavaScript"", ""Feature Engineering""], ""career_excerpt"": ""Role 1 Company: Wipro Title: Operations Manager Industry: IT Services Duration months: 43 Current: True Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering an""}"
+CAND_0000004,Marketing Manager,Dunder Mifflin,Paper Products,Sydney,Australia,3.8,"Role 1
+Company: Dunder Mifflin
+Title: Marketing Manager
+Industry: Paper Products
+Duration months: 14
+Current: True
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.
+Role 2
+Company: Infosys
+Title: Operations Manager
+Industry: IT Services
+Duration months: 20
+Current: False
+Description: Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords. Managed a freelance writer pool and the editorial calendar. Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality.
+Role 3
+Company: Globex Inc
+Title: Business Analyst
+Industry: Manufacturing
+Duration months: 10
+Current: False
+Description: Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the operational KPIs (on-time fulfillment, accuracy, cost per order) and led the continuous improvement initiatives that drove a 22% productivity gain over 18 months.","Node.js, Content Writing, Redux, Airflow, GraphQL, Object Detection, Webpack, Six Sigma, SAP, JavaScript",0.18,0.42000000000000004,0.135,0.05,0.5428571428571428,1.0,0.6000000000000001,0.8731949999999999,1.0,3,3,2,1,0,0,99,0.26,0.35,-1.0,120,False,True,0.44877159863033755,0.15613433672666832,0.8551960784313725,8,15,0.4930588235294117,0.07749656989411763,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 14, ""top_skills"": [""Node.js"", ""Content Writing"", ""Redux"", ""Airflow"", ""GraphQL"", ""Object Detection"", ""Webpack"", ""Six Sigma""], ""career_excerpt"": ""Role 1 Company: Dunder Mifflin Title: Marketing Manager Industry: Paper Products Duration months: 14 Current: True Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA rev""}"
+CAND_0000030,Marketing Manager,Dunder Mifflin,Paper Products,"Kochi, Kerala",India,10.0,"Role 1
+Company: Dunder Mifflin
+Title: Marketing Manager
+Industry: Paper Products
+Duration months: 51
+Current: True
+Description: Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness function. Managed a team of 3 staff accountants. Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years.
+Role 2
+Company: Hooli
+Title: Sales Executive
+Industry: Software
+Duration months: 45
+Current: False
+Description: Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the operational KPIs (on-time fulfillment, accuracy, cost per order) and led the continuous improvement initiatives that drove a 22% productivity gain over 18 months.
+Role 3
+Company: Hooli
+Title: Content Writer
+Industry: Software
+Duration months: 22
+Current: False
+Description: Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords. Managed a freelance writer pool and the editorial calendar. Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality.","gRPC, Apache Beam, GraphQL, Java, Spring Boot, Microservices, Six Sigma, Accounting, HTML",0.18,0.35,0.135,0.05,0.62,0.65,0.52,0.9444667499999999,1.0,3,3,1,1,0,0,248,0.66,0.73,-1.0,60,False,False,0.375703360946974,0.17315687319031242,0.8357732732732732,14,12,0.4541319819819819,0.07720426027684457,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 51, ""top_skills"": [""gRPC"", ""Apache Beam"", ""GraphQL"", ""Java"", ""Spring Boot"", ""Microservices"", ""Six Sigma"", ""Accounting""], ""career_excerpt"": ""Role 1 Company: Dunder Mifflin Title: Marketing Manager Industry: Paper Products Duration months: 51 Current: True Description: Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the G""}"
+CAND_0000021,Project Manager,Wipro,IT Services,"Bhubaneswar, Odisha",India,14.5,"Role 1
+Company: Wipro
+Title: Project Manager
+Industry: IT Services
+Duration months: 30
+Current: True
+Description: Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social. Led the recent rebrand and managed a small external agency for production work. Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design.
+Role 2
+Company: Infosys
+Title: Marketing Manager
+Industry: IT Services
+Duration months: 32
+Current: False
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.
+Role 3
+Company: Stark Industries
+Title: Sales Executive
+Industry: Manufacturing
+Duration months: 18
+Current: False
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.
+Role 4
+Company: Dunder Mifflin
+Title: Customer Support
+Industry: Paper Products
+Duration months: 51
+Current: False
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.
+Role 5
+Company: Wipro
+Title: Project Manager
+Industry: IT Services
+Duration months: 15
+Current: False
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.
+Role 6
+Company: TCS
+Title: Customer Support
+Industry: IT Services
+Duration months: 26
+Current: False
+Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited.","Hadoop, PostgreSQL, Kafka, Microservices, AWS, TypeScript, ETL, Spring Boot, Recommendation Systems, Fine-tuning LLMs, Prompt Engineering, LangChain, Pinecone, Vector Search, Embeddings, FAISS",0.18,0.14,0.46499999999999997,0.24,0.0,1.0,0.36,0.881676,1.0,10,0,2,0,1,0,223,0.49,0.53,-1.0,60,False,True,0.5804932969334278,0.38800443275120117,0.9684979838709676,2,4,0.4722493951612903,0.07494677239108063,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 30, ""top_skills"": [""Hadoop"", ""PostgreSQL"", ""Kafka"", ""Microservices"", ""AWS"", ""TypeScript"", ""ETL"", ""Spring Boot""], ""career_excerpt"": ""Role 1 Company: Wipro Title: Project Manager Industry: IT Services Duration months: 30 Current: True Description: Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative acr""}"
+CAND_0000016,Accountant,Infosys,IT Services,"Gurgaon, Haryana",India,5.3,"Role 1
+Company: Infosys
+Title: Accountant
+Industry: IT Services
+Duration months: 18
+Current: True
+Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders.
+Role 2
+Company: TCS
+Title: Mechanical Engineer
+Industry: IT Services
+Duration months: 39
+Current: False
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.
+Role 3
+Company: Globex Inc
+Title: Operations Manager
+Industry: Manufacturing
+Duration months: 6
+Current: False
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.","Node.js, Figma, Data Pipelines, Go, Photoshop, Kubeflow, Accounting, SQL",0.18,0.14,0.0,0.05,0.88,1.0,0.36,1.0175535,1.0,0,0,2,0,0,0,193,0.64,0.66,-1.0,60,True,False,0.4424593982361476,0.12718414682806078,0.8094988650253186,9,23,0.40544965950759554,0.07426200961903719,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 18, ""top_skills"": [""Node.js"", ""Figma"", ""Data Pipelines"", ""Go"", ""Photoshop"", ""Kubeflow"", ""Accounting"", ""SQL""], ""career_excerpt"": ""Role 1 Company: Infosys Title: Accountant Industry: IT Services Duration months: 18 Current: True Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Ow""}"
+CAND_0000014,Frontend Engineer,Zomato,Food Delivery,"Hyderabad, Telangana",India,8.4,"Role 1
+Company: Zomato
+Title: Frontend Engineer
+Industry: Food Delivery
+Duration months: 33
+Current: True
+Description: Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a legacy AngularJS app. Strong on the frontend craft — accessibility, performance, animations — but limited backend exposure.
+Role 2
+Company: Dunder Mifflin
+Title: Software Engineer
+Industry: Paper Products
+Duration months: 48
+Current: False
+Description: Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup using Locust. Worked closely with developers on testability patterns and with product on acceptance criteria. Recent work has been on shifting test responsibility into the dev team — moving from QA-as-gate to QA-as-coach. Career has been entirely in QA/test engineering.
+Role 3
+Company: Acme Corp
+Title: Java Developer
+Industry: Manufacturing
+Duration months: 19
+Current: False
+Description: Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering.","FAISS, BigQuery, React, OpenSearch, OpenCV, YOLO, SAP, SEO, REST APIs, GANs, dbt, Photoshop, Tailwind",0.18,0.07,0.18,0.24,0.88,1.0,0.28,0.9536875,1.0,4,0,1,0,0,0,81,0.8,0.55,-1.0,90,False,False,0.31326381653599766,0.19337369833744114,0.7903654485049832,26,10,0.430909634551495,0.0739715637782392,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 33, ""top_skills"": [""FAISS"", ""BigQuery"", ""React"", ""OpenSearch"", ""OpenCV"", ""YOLO"", ""SAP"", ""SEO""], ""career_excerpt"": ""Role 1 Company: Zomato Title: Frontend Engineer Industry: Food Delivery Duration months: 33 Current: True Description: Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from ""}"
+CAND_0000029,Business Analyst,Wipro,IT Services,"Noida, Uttar Pradesh",India,7.2,"Role 1
+Company: Wipro
+Title: Business Analyst
+Industry: IT Services
+Duration months: 16
+Current: True
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.
+Role 2
+Company: Globex Inc
+Title: Mechanical Engineer
+Industry: Manufacturing
+Duration months: 14
+Current: False
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.
+Role 3
+Company: TCS
+Title: Civil Engineer
+Industry: IT Services
+Duration months: 55
+Current: False
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.","Node.js, Scrum, Tailwind, Hadoop, Spring Boot, CI/CD, gRPC, Terraform",0.18,0.14,0.0,0.24,0.9714285714285714,1.0,0.36,0.91082875,1.0,0,0,2,0,0,0,276,0.12,0.67,-1.0,60,False,False,0.3773857627142227,0.07841772814839511,0.7493299583085169,13,32,0.42799898749255505,0.07017008090023971,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 16, ""top_skills"": [""Node.js"", ""Scrum"", ""Tailwind"", ""Hadoop"", ""Spring Boot"", ""CI/CD"", ""gRPC"", ""Terraform""], ""career_excerpt"": ""Role 1 Company: Wipro Title: Business Analyst Industry: IT Services Duration months: 16 Current: True Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a ""}"
+CAND_0000046,Mechanical Engineer,Hooli,Software,London,UK,7.8,"Role 1
+Company: Hooli
+Title: Mechanical Engineer
+Industry: Software
+Duration months: 30
+Current: True
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.
+Role 2
+Company: Pied Piper
+Title: HR Manager
+Industry: Software
+Duration months: 33
+Current: False
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.
+Role 3
+Company: Hooli
+Title: Marketing Manager
+Industry: Software
+Duration months: 30
+Current: False
+Description: Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the operational KPIs (on-time fulfillment, accuracy, cost per order) and led the continuous improvement initiatives that drove a 22% productivity gain over 18 months.","Agile, Scrum, SAP, React, Azure, ETL",0.18,0.04,0.045,0.58,0.8857142857142858,1.0,0.28,0.9294939166666667,1.0,1,1,0,0,0,0,132,0.41,0.4,0.34,30,False,True,0.2051622017647638,0.052214052583139645,0.6200722394220846,35,42,0.4189216718266253,0.07008932619408204,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 30, ""top_skills"": [""Agile"", ""Scrum"", ""SAP"", ""React"", ""Azure"", ""ETL""], ""career_excerpt"": ""Role 1 Company: Hooli Title: Mechanical Engineer Industry: Software Duration months: 30 Current: True Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and ""}"
+CAND_0000045,Project Manager,Initech,Software,"Indore, Madhya Pradesh",India,12.2,"Role 1
+Company: Initech
+Title: Project Manager
+Industry: Software
+Duration months: 15
+Current: True
+Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders.
+Role 2
+Company: Pied Piper
+Title: Civil Engineer
+Industry: Software
+Duration months: 13
+Current: False
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.
+Role 3
+Company: Infosys
+Title: Marketing Manager
+Industry: IT Services
+Duration months: 12
+Current: False
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.
+Role 4
+Company: Wayne Enterprises
+Title: Content Writer
+Industry: Conglomerate
+Duration months: 16
+Current: False
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.
+Role 5
+Company: TCS
+Title: Graphic Designer
+Industry: IT Services
+Duration months: 38
+Current: False
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.
+Role 6
+Company: Wayne Enterprises
+Title: Graphic Designer
+Industry: Conglomerate
+Duration months: 28
+Current: False
+Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders.
+Role 7
+Company: Stark Industries
+Title: Operations Manager
+Industry: Manufacturing
+Duration months: 21
+Current: False
+Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders.","GCP, Sales, Redux, PostgreSQL, Airflow, SAP",0.18,0.14,0.0,0.24,0.25714285714285723,1.0,0.36,1.0138116666666668,1.0,0,0,2,0,0,0,69,0.62,0.33,-1.0,60,True,True,0.35225995371681085,0.1287177168041873,0.7680551156160912,17,22,0.38361653468482737,0.07000468531014888,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 15, ""top_skills"": [""GCP"", ""Sales"", ""Redux"", ""PostgreSQL"", ""Airflow"", ""SAP""], ""career_excerpt"": ""Role 1 Company: Initech Title: Project Manager Industry: Software Duration months: 15 Current: True Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. ""}"
+CAND_0000009,Mechanical Engineer,Dunder Mifflin,Paper Products,New York,USA,11.0,"Role 1
+Company: Dunder Mifflin
+Title: Mechanical Engineer
+Industry: Paper Products
+Duration months: 44
+Current: True
+Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited.
+Role 2
+Company: Wipro
+Title: Content Writer
+Industry: IT Services
+Duration months: 20
+Current: False
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.
+Role 3
+Company: Stark Industries
+Title: Customer Support
+Industry: Manufacturing
+Duration months: 49
+Current: False
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.
+Role 4
+Company: Acme Corp
+Title: Project Manager
+Industry: Manufacturing
+Duration months: 18
+Current: False
+Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders.","Snowflake, gRPC, JavaScript, OpenCV, Go, PowerPoint",0.18,0.14,0.0,0.58,0.62,0.25,0.36,0.9059245833333333,1.0,0,0,2,0,0,0,156,0.53,0.54,0.48,150,False,False,0.2824216361999241,0.11455248721260727,0.6971656217345872,28,27,0.41144968652037617,0.06709362944824841,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 44, ""top_skills"": [""Snowflake"", ""gRPC"", ""JavaScript"", ""OpenCV"", ""Go"", ""PowerPoint""], ""career_excerpt"": ""Role 1 Company: Dunder Mifflin Title: Mechanical Engineer Industry: Paper Products Duration months: 44 Current: True Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and""}"
+CAND_0000034,Business Analyst,Wipro,IT Services,"Ahmedabad, Gujarat",India,14.5,"Role 1
+Company: Wipro
+Title: Business Analyst
+Industry: IT Services
+Duration months: 14
+Current: True
+Description: Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords. Managed a freelance writer pool and the editorial calendar. Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality.
+Role 2
+Company: Hooli
+Title: Mechanical Engineer
+Industry: Software
+Duration months: 21
+Current: False
+Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited.
+Role 3
+Company: Infosys
+Title: Business Analyst
+Industry: IT Services
+Duration months: 26
+Current: False
+Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited.
+Role 4
+Company: TCS
+Title: Accountant
+Industry: IT Services
+Duration months: 40
+Current: False
+Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited.
+Role 5
+Company: Hooli
+Title: Accountant
+Industry: Software
+Duration months: 22
+Current: False
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.
+Role 6
+Company: Pied Piper
+Title: Content Writer
+Industry: Software
+Duration months: 38
+Current: False
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.
+Role 7
+Company: Stark Industries
+Title: Content Writer
+Industry: Manufacturing
+Duration months: 9
+Current: False
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.","GraphQL, Excel, Node.js, Terraform, Salesforce CRM, Flask, React, Azure, Redux, Next.js",0.18,0.42000000000000004,0.135,0.24,0.0,0.65,0.6000000000000001,0.86401,1.0,3,3,2,1,0,0,180,0.15,0.41,-1.0,90,False,False,0.2589138155087668,0.1304426567521859,0.7192398390900263,29,21,0.430971951727008,0.06702553368209739,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 14, ""top_skills"": [""GraphQL"", ""Excel"", ""Node.js"", ""Terraform"", ""Salesforce CRM"", ""Flask"", ""React"", ""Azure""], ""career_excerpt"": ""Role 1 Company: Wipro Title: Business Analyst Industry: IT Services Duration months: 14 Current: True Description: Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ""}"
+CAND_0000025,Frontend Engineer,Tech Mahindra,IT Services,"Vizag, Andhra Pradesh",India,7.3,"Role 1
+Company: Tech Mahindra
+Title: Frontend Engineer
+Industry: IT Services
+Duration months: 33
+Current: True
+Description: Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering.
+Role 2
+Company: Mindtree
+Title: Frontend Engineer
+Industry: IT Services
+Duration months: 48
+Current: False
+Description: Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering.
+Role 3
+Company: Zomato
+Title: Frontend Engineer
+Industry: Food Delivery
+Duration months: 6
+Current: False
+Description: Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a legacy AngularJS app. Strong on the frontend craft — accessibility, performance, animations — but limited backend exposure.","JavaScript, Spark, GCP, TypeScript, LangChain, Apache Flink, ETL, Redis, Data Pipelines",0.18,0.07,0.06,0.24,0.9571428571428572,0.65,0.28,1.0495952777777777,1.0,1,0,1,0,1,0,94,0.74,0.7,-1.0,120,True,False,0.12605514777083965,0.05059344592423454,0.5951361126975061,42,43,0.34824083380925175,0.06579214824520556,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 33, ""top_skills"": [""JavaScript"", ""Spark"", ""GCP"", ""TypeScript"", ""LangChain"", ""Apache Flink"", ""ETL"", ""Redis""], ""career_excerpt"": ""Role 1 Company: Tech Mahindra Title: Frontend Engineer Industry: IT Services Duration months: 33 Current: True Description: Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the ""}"
+CAND_0000049,Mechanical Engineer,Wayne Enterprises,Conglomerate,Berlin,Germany,11.8,"Role 1
+Company: Wayne Enterprises
+Title: Mechanical Engineer
+Industry: Conglomerate
+Duration months: 49
+Current: True
+Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders.
+Role 2
+Company: Hooli
+Title: Business Analyst
+Industry: Software
+Duration months: 54
+Current: False
+Description: Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness function. Managed a team of 3 staff accountants. Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years.
+Role 3
+Company: Wayne Enterprises
+Title: Sales Executive
+Industry: Conglomerate
+Duration months: 38
+Current: False
+Description: Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the operational KPIs (on-time fulfillment, accuracy, cost per order) and led the continuous improvement initiatives that drove a 22% productivity gain over 18 months.","TypeScript, Rust, Data Pipelines, Apache Beam, GraphQL, Kubernetes",0.18,0.04,0.045,0.58,0.31428571428571417,0.25,0.28,0.9712309722222221,1.0,1,1,0,0,0,0,50,0.59,0.56,-1.0,120,False,False,0.21872026012749565,0.13427241578896726,0.7189826302729528,33,18,0.3710947890818859,0.06487537550158809,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 49, ""top_skills"": [""TypeScript"", ""Rust"", ""Data Pipelines"", ""Apache Beam"", ""GraphQL"", ""Kubernetes""], ""career_excerpt"": ""Role 1 Company: Wayne Enterprises Title: Mechanical Engineer Industry: Conglomerate Duration months: 49 Current: True Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the ""}"
+CAND_0000018,Frontend Engineer,Acme Corp,Manufacturing,"Bhubaneswar, Odisha",India,6.6,"Role 1
+Company: Acme Corp
+Title: Frontend Engineer
+Industry: Manufacturing
+Duration months: 33
+Current: True
+Description: Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup using Locust. Worked closely with developers on testability patterns and with product on acceptance criteria. Recent work has been on shifting test responsibility into the dev team — moving from QA-as-gate to QA-as-coach. Career has been entirely in QA/test engineering.
+Role 2
+Company: Pied Piper
+Title: Frontend Engineer
+Industry: Software
+Duration months: 32
+Current: False
+Description: Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup using Locust. Worked closely with developers on testability patterns and with product on acceptance criteria. Recent work has been on shifting test responsibility into the dev team — moving from QA-as-gate to QA-as-coach. Career has been entirely in QA/test engineering.
+Role 3
+Company: Initech
+Title: Full Stack Developer
+Industry: Software
+Duration months: 13
+Current: False
+Description: Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering.","CNN, Java, Accounting, Data Pipelines, Node.js, Tailwind",0.18,0.07,0.045,0.24,0.9428571428571428,0.65,0.28,0.9056205555555554,1.0,1,0,1,0,0,0,134,0.16,0.7,0.46,120,False,False,0.3528812244098021,0.07435320091996798,0.7223684210526314,16,35,0.3839105263157895,0.06258190754263157,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 33, ""top_skills"": [""CNN"", ""Java"", ""Accounting"", ""Data Pipelines"", ""Node.js"", ""Tailwind""], ""career_excerpt"": ""Role 1 Company: Acme Corp Title: Frontend Engineer Industry: Manufacturing Duration months: 33 Current: True Description: Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setu""}"
+CAND_0000036,Project Manager,Initech,Software,"Trivandrum, Kerala",India,11.3,"Role 1
+Company: Initech
+Title: Project Manager
+Industry: Software
+Duration months: 16
+Current: True
+Description: Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social. Led the recent rebrand and managed a small external agency for production work. Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design.
+Role 2
+Company: Hooli
+Title: Content Writer
+Industry: Software
+Duration months: 18
+Current: False
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.
+Role 3
+Company: Dunder Mifflin
+Title: HR Manager
+Industry: Paper Products
+Duration months: 45
+Current: False
+Description: Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social. Led the recent rebrand and managed a small external agency for production work. Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design.
+Role 4
+Company: TCS
+Title: Civil Engineer
+Industry: IT Services
+Duration months: 24
+Current: False
+Description: Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness function. Managed a team of 3 staff accountants. Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years.
+Role 5
+Company: Wayne Enterprises
+Title: Marketing Manager
+Industry: Conglomerate
+Duration months: 31
+Current: False
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.","Figma, MongoDB, PowerPoint, CSS, Excel, GraphQL, Object Detection, Vue.js, Sales",0.18,0.14,0.0,0.24,0.38571428571428557,0.65,0.36,0.9861375,1.0,0,0,2,0,0,0,202,0.4,0.78,0.46,60,True,False,0.22662275304485288,0.10767153855281696,0.6704106280193237,32,30,0.34582318840579707,0.061385258602173906,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 16, ""top_skills"": [""Figma"", ""MongoDB"", ""PowerPoint"", ""CSS"", ""Excel"", ""GraphQL"", ""Object Detection"", ""Vue.js""], ""career_excerpt"": ""Role 1 Company: Initech Title: Project Manager Industry: Software Duration months: 16 Current: True Description: Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative acro""}"
+CAND_0000039,Marketing Manager,Acme Corp,Manufacturing,"Bhubaneswar, Odisha",India,3.9,"Role 1
+Company: Acme Corp
+Title: Marketing Manager
+Industry: Manufacturing
+Duration months: 22
+Current: True
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.
+Role 2
+Company: Stark Industries
+Title: Mechanical Engineer
+Industry: Manufacturing
+Duration months: 24
+Current: False
+Description: Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social. Led the recent rebrand and managed a small external agency for production work. Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design.","Spark, Tailwind, Sales, CI/CD, Illustrator, Hadoop, Microservices, REST APIs, AWS",0.18,0.14,0.0,0.05,0.5571428571428572,1.0,0.36,1.0129820833333334,1.0,0,0,2,0,0,0,75,0.52,0.74,-1.0,30,False,True,0.2573745741260251,0.06881381460035325,0.646969696969697,30,39,0.3340909090909091,0.06091705892045455,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 22, ""top_skills"": [""Spark"", ""Tailwind"", ""Sales"", ""CI/CD"", ""Illustrator"", ""Hadoop"", ""Microservices"", ""REST APIs""], ""career_excerpt"": ""Role 1 Company: Acme Corp Title: Marketing Manager Industry: Manufacturing Duration months: 22 Current: True Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, p""}"
+CAND_0000044,Frontend Engineer,Tech Mahindra,IT Services,"Indore, Madhya Pradesh",India,5.7,"Role 1
+Company: Tech Mahindra
+Title: Frontend Engineer
+Industry: IT Services
+Duration months: 50
+Current: True
+Description: Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the customer onboarding flow which involved orchestrating multiple downstream services. Solid on the Spring ecosystem, transaction handling, and the operational side of Java services. Looking to either go deeper on distributed systems or expand into modern application stacks.
+Role 2
+Company: Hooli
+Title: DevOps Engineer
+Industry: Software
+Duration months: 18
+Current: False
+Description: Frontend engineering at a media company. React, TypeScript, and the typical surrounding tooling (Webpack, Jest, Cypress). Built the company's design system from scratch and led the migration from a legacy AngularJS app. Strong on the frontend craft — accessibility, performance, animations — but limited backend exposure.","Hadoop, JavaScript, Databricks, Python, dbt, CI/CD",0.18,0.0,0.105,0.24,0.88,0.65,0.0,0.9508274999999999,1.0,2,0,0,0,1,0,203,0.66,0.66,-1.0,90,False,False,0.19105738832059307,0.11941473802033283,0.6743197278911564,38,24,0.3500959183673469,0.059918548827857125,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 50, ""top_skills"": [""Hadoop"", ""JavaScript"", ""Databricks"", ""Python"", ""dbt"", ""CI/CD""], ""career_excerpt"": ""Role 1 Company: Tech Mahindra Title: Frontend Engineer Industry: IT Services Duration months: 50 Current: True Description: Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the c""}"
+CAND_0000013,Civil Engineer,Globex Inc,Manufacturing,Dubai,UAE,1.1,"Role 1
+Company: Globex Inc
+Title: Civil Engineer
+Industry: Manufacturing
+Duration months: 13
+Current: True
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.","React, Redux, Vue.js, Six Sigma, Spring Boot, Spark, Data Pipelines, GCP, Flask, Snowflake",0.18,0.0,0.0,0.58,0.15714285714285714,0.25,0.2,0.9846858055555554,1.0,0,0,0,0,0,0,98,0.28,0.33,0.26,30,True,False,0.3521801359808249,0.05980784853821136,0.6930058390454429,18,41,0.33580175171363286,0.059518659310758934,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 13, ""top_skills"": [""React"", ""Redux"", ""Vue.js"", ""Six Sigma"", ""Spring Boot"", ""Spark"", ""Data Pipelines"", ""GCP""], ""career_excerpt"": ""Role 1 Company: Globex Inc Title: Civil Engineer Industry: Manufacturing Duration months: 13 Current: True Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering""}"
+CAND_0000050,Business Analyst,Infosys,IT Services,"Gurgaon, Haryana",India,13.5,"Role 1
+Company: Infosys
+Title: Business Analyst
+Industry: IT Services
+Duration months: 45
+Current: True
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.
+Role 2
+Company: TCS
+Title: Marketing Manager
+Industry: IT Services
+Duration months: 36
+Current: False
+Description: Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the operational KPIs (on-time fulfillment, accuracy, cost per order) and led the continuous improvement initiatives that drove a 22% productivity gain over 18 months.
+Role 3
+Company: Hooli
+Title: HR Manager
+Industry: Software
+Duration months: 28
+Current: False
+Description: Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness function. Managed a team of 3 staff accountants. Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years.
+Role 4
+Company: Acme Corp
+Title: Content Writer
+Industry: Manufacturing
+Duration months: 51
+Current: False
+Description: Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness function. Managed a team of 3 staff accountants. Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years.","gRPC, SEO, Feature Engineering, Marketing, Data Pipelines, Kafka, Excel",0.18,0.18000000000000002,0.045,0.24,0.0714285714285714,1.0,0.44,0.9064755,1.0,1,1,2,0,0,0,253,0.42,0.58,-1.0,90,False,False,0.24101393947002775,0.11412237859822966,0.6817557442557443,31,28,0.3612267232767233,0.05893977142721329,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 45, ""top_skills"": [""gRPC"", ""SEO"", ""Feature Engineering"", ""Marketing"", ""Data Pipelines"", ""Kafka"", ""Excel""], ""career_excerpt"": ""Role 1 Company: Infosys Title: Business Analyst Industry: IT Services Duration months: 45 Current: True Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, protot""}"
+CAND_0000017,Accountant,Wipro,IT Services,"Bangalore, Karnataka",India,12.3,"Role 1
+Company: Wipro
+Title: Accountant
+Industry: IT Services
+Duration months: 27
+Current: True
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.
+Role 2
+Company: Infosys
+Title: Customer Support
+Industry: IT Services
+Duration months: 37
+Current: False
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.
+Role 3
+Company: Initech
+Title: Mechanical Engineer
+Industry: Software
+Duration months: 43
+Current: False
+Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders.
+Role 4
+Company: Acme Corp
+Title: Accountant
+Industry: Manufacturing
+Duration months: 39
+Current: False
+Description: Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness function. Managed a team of 3 staff accountants. Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years.","Next.js, Java, Apache Flink, Sales, Tally, PostgreSQL, REST APIs, Hadoop",0.18,0.14,0.0,0.05,0.24285714285714277,1.0,0.36,0.85076875,1.0,0,0,2,0,0,0,240,0.27,0.32,0.17,90,False,False,0.4300132374322346,0.16671222307733194,0.8473856839668146,11,13,0.3722157051900444,0.057000508242282456,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 27, ""top_skills"": [""Next.js"", ""Java"", ""Apache Flink"", ""Sales"", ""Tally"", ""PostgreSQL"", ""REST APIs"", ""Hadoop""], ""career_excerpt"": ""Role 1 Company: Wipro Title: Accountant Industry: IT Services Duration months: 27 Current: True Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the cu""}"
+CAND_0000041,Operations Manager,Hooli,Software,"Delhi, Delhi",India,13.7,"Role 1
+Company: Hooli
+Title: Operations Manager
+Industry: Software
+Duration months: 42
+Current: True
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.
+Role 2
+Company: Acme Corp
+Title: Business Analyst
+Industry: Manufacturing
+Duration months: 21
+Current: False
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.
+Role 3
+Company: Wayne Enterprises
+Title: Content Writer
+Industry: Conglomerate
+Duration months: 24
+Current: False
+Description: Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the operational KPIs (on-time fulfillment, accuracy, cost per order) and led the continuous improvement initiatives that drove a 22% productivity gain over 18 months.
+Role 4
+Company: Infosys
+Title: Content Writer
+Industry: IT Services
+Duration months: 52
+Current: False
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.
+Role 5
+Company: Dunder Mifflin
+Title: Mechanical Engineer
+Industry: Paper Products
+Duration months: 23
+Current: False
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.","Airflow, SQL, Go, GCP, Figma, React, Webpack, Kubernetes, Angular",0.18,0.18000000000000002,0.045,0.05,0.04285714285714293,1.0,0.44,0.9696099999999999,1.0,1,1,2,0,0,0,108,0.07,0.85,0.16,90,True,True,0.3277924365111114,0.07159078459315475,0.6831757093081134,22,38,0.32545271279243404,0.05680119687312094,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 42, ""top_skills"": [""Airflow"", ""SQL"", ""Go"", ""GCP"", ""Figma"", ""React"", ""Webpack"", ""Kubernetes""], ""career_excerpt"": ""Role 1 Company: Hooli Title: Operations Manager Industry: Software Duration months: 42 Current: True Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and t""}"
+CAND_0000006,Business Analyst,Wayne Enterprises,Conglomerate,Austin,USA,6.0,"Role 1
+Company: Wayne Enterprises
+Title: Business Analyst
+Industry: Conglomerate
+Duration months: 33
+Current: True
+Description: Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness function. Managed a team of 3 staff accountants. Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years.
+Role 2
+Company: Pied Piper
+Title: Mechanical Engineer
+Industry: Software
+Duration months: 38
+Current: False
+Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited.","Content Writing, SEO, Redux, SQL, Sales, gRPC, Django, Terraform",0.18,0.0,0.0,0.24,0.88,1.0,0.2,0.9003023611111111,1.0,0,0,0,0,0,0,124,0.12,0.57,-1.0,150,False,True,0.173445521800204,0.07597009796439305,0.6325488931871911,39,34,0.3445646679561573,0.055838229140951,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 33, ""top_skills"": [""Content Writing"", ""SEO"", ""Redux"", ""SQL"", ""Sales"", ""gRPC"", ""Django"", ""Terraform""], ""career_excerpt"": ""Role 1 Company: Wayne Enterprises Title: Business Analyst Industry: Conglomerate Duration months: 33 Current: True Description: Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the G""}"
+CAND_0000011,QA Engineer,Pied Piper,Software,"Hyderabad, Telangana",India,2.0,"Role 1
+Company: Pied Piper
+Title: QA Engineer
+Industry: Software
+Duration months: 13
+Current: True
+Description: Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shopping flow, push notification system, and the offline-first sync layer. Comfortable with the Android framework, Jetpack components, and the typical patterns (MVVM, Hilt, Coroutines). My career has been entirely on mobile so far; interested in expanding into broader backend or platform engineering.
+Role 2
+Company: Hooli
+Title: QA Engineer
+Industry: Software
+Duration months: 10
+Current: False
+Description: Test automation and QA engineering for a fintech product. Built and maintained the end-to-end test suite using Selenium and pytest, plus the load-testing setup using Locust. Worked closely with developers on testability patterns and with product on acceptance criteria. Recent work has been on shifting test responsibility into the dev team — moving from QA-as-gate to QA-as-coach. Career has been entirely in QA/test engineering.","Recommendation Systems, Scrum, FastAPI, Hugging Face Transformers, AWS, Snowflake, Spring Boot, PostgreSQL, Kubeflow, Azure",0.18,0.07,0.09,0.24,0.2857142857142857,1.0,0.28,0.9388396388888889,0.82,2,0,1,0,0,0,164,0.56,0.45,-1.0,90,False,False,0.3412531501406392,0.13193828157737034,0.7673259493670886,19,20,0.37339778481012664,0.05174275067847022,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 13, ""top_skills"": [""Recommendation Systems"", ""Scrum"", ""FastAPI"", ""Hugging Face Transformers"", ""AWS"", ""Snowflake"", ""Spring Boot"", ""PostgreSQL""], ""career_excerpt"": ""Role 1 Company: Pied Piper Title: QA Engineer Industry: Software Duration months: 13 Current: True Description: Android mobile development using Java and (more recently) Kotlin at a consumer-app company. Built and maintained multiple production features including the main shoppin""}"
+CAND_0000037,Business Analyst,Stark Industries,Manufacturing,Dubai,UAE,14.3,"Role 1
+Company: Stark Industries
+Title: Business Analyst
+Industry: Manufacturing
+Duration months: 51
+Current: True
+Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited.
+Role 2
+Company: Initech
+Title: Civil Engineer
+Industry: Software
+Duration months: 31
+Current: False
+Description: Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the operational KPIs (on-time fulfillment, accuracy, cost per order) and led the continuous improvement initiatives that drove a 22% productivity gain over 18 months.
+Role 3
+Company: Stark Industries
+Title: Content Writer
+Industry: Manufacturing
+Duration months: 44
+Current: False
+Description: Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the operational KPIs (on-time fulfillment, accuracy, cost per order) and led the continuous improvement initiatives that drove a 22% productivity gain over 18 months.
+Role 4
+Company: Hooli
+Title: Mechanical Engineer
+Industry: Software
+Duration months: 30
+Current: False
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.
+Role 5
+Company: Acme Corp
+Title: HR Manager
+Industry: Manufacturing
+Duration months: 14
+Current: False
+Description: Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social. Led the recent rebrand and managed a small external agency for production work. Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design.","Databricks, Docker, Flask, AWS, Terraform, Tally, TTS, Apache Beam",0.18,0.11000000000000001,0.045,0.24,0.0,0.25,0.36,0.9779975000000001,1.0,1,1,1,0,0,0,203,0.78,0.82,0.19,30,False,False,0.09796796968164861,0.038277499454499805,0.5865926953305594,43,45,0.26917780859916784,0.047385940295783635,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 51, ""top_skills"": [""Databricks"", ""Docker"", ""Flask"", ""AWS"", ""Terraform"", ""Tally"", ""TTS"", ""Apache Beam""], ""career_excerpt"": ""Role 1 Company: Stark Industries Title: Business Analyst Industry: Manufacturing Duration months: 51 Current: True Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and d""}"
+CAND_0000028,Operations Manager,Wipro,IT Services,Dubai,UAE,1.1,"Role 1
+Company: Wipro
+Title: Operations Manager
+Industry: IT Services
+Duration months: 13
+Current: True
+Description: Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social. Led the recent rebrand and managed a small external agency for production work. Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design.","Snowflake, React, JavaScript, Tailwind, REST APIs, Photoshop, Data Pipelines, Terraform, CNN, Content Writing",0.18,0.07,0.0,0.05,0.15714285714285714,1.0,0.28,0.9514095833333334,1.0,0,0,1,0,0,0,93,0.14,0.86,0.49,60,False,True,0.06409902333869903,0.02081537294611589,0.5755229194481531,45,47,0.26365687583444597,0.04515222210851136,"[""penalty_unrelated_current_title""]","{""current_duration_months"": 13, ""top_skills"": [""Snowflake"", ""React"", ""JavaScript"", ""Tailwind"", ""REST APIs"", ""Photoshop"", ""Data Pipelines"", ""Terraform""], ""career_excerpt"": ""Role 1 Company: Wipro Title: Operations Manager Industry: IT Services Duration months: 13 Current: True Description: Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative ""}"
+CAND_0000033,Graphic Designer,Wipro,IT Services,"Pune, Maharashtra",India,8.6,"Role 1
+Company: Wipro
+Title: Graphic Designer
+Industry: IT Services
+Duration months: 31
+Current: True
+Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited.
+Role 2
+Company: Dunder Mifflin
+Title: Project Manager
+Industry: Paper Products
+Duration months: 40
+Current: False
+Description: Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness function. Managed a team of 3 staff accountants. Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years.
+Role 3
+Company: Acme Corp
+Title: Content Writer
+Industry: Manufacturing
+Duration months: 31
+Current: False
+Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders.","Kubernetes, Data Pipelines, Snowflake, CI/CD, SEO, ETL, Airflow, TypeScript, Content Writing, Spring Boot",0.126,0.0,0.0,0.05,0.88,1.0,0.0,0.9652931111111112,1.0,0,0,0,0,0,0,97,0.08,0.37,-1.0,30,True,False,0.2048325220203778,0.11493687186234455,0.6723594961240309,36,26,0.32230784883720925,0.03920131481358953,"[""penalty_unrelated_current_title"", ""penalty_weak_product_ml_signal""]","{""current_duration_months"": 31, ""top_skills"": [""Kubernetes"", ""Data Pipelines"", ""Snowflake"", ""CI/CD"", ""SEO"", ""ETL"", ""Airflow"", ""TypeScript""], ""career_excerpt"": ""Role 1 Company: Wipro Title: Graphic Designer Industry: IT Services Duration months: 31 Current: True Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transf""}"
+CAND_0000005,Accountant,Stark Industries,Manufacturing,"Gurgaon, Haryana",India,11.0,"Role 1
+Company: Stark Industries
+Title: Accountant
+Industry: Manufacturing
+Duration months: 52
+Current: True
+Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited.
+Role 2
+Company: Wipro
+Title: HR Manager
+Industry: IT Services
+Duration months: 45
+Current: False
+Description: Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness function. Managed a team of 3 staff accountants. Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years.
+Role 3
+Company: Initech
+Title: HR Manager
+Industry: Software
+Duration months: 24
+Current: False
+Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited.
+Role 4
+Company: TCS
+Title: Accountant
+Industry: IT Services
+Duration months: 9
+Current: False
+Description: Customer support team lead at a SaaS product. Managed a team of 8 support agents handling tier-1 and tier-2 tickets; owned the escalation process to engineering and the customer-feedback loop to product. Built out the support knowledge base and the agent training program. Strong on the people-management side and the process side; lighter on technical depth beyond product expertise.","SQL, PowerPoint, Photoshop, Tailwind, Apache Flink, Image Classification",0.126,0.0,0.0,0.05,0.62,1.0,0.2,1.00097375,1.0,0,0,0,0,0,0,274,0.37,0.74,-1.0,30,True,True,0.2136120817402811,0.07925705044047159,0.6596329202712181,34,31,0.3002898760813654,0.037873367701873155,"[""penalty_unrelated_current_title"", ""penalty_weak_product_ml_signal""]","{""current_duration_months"": 52, ""top_skills"": [""SQL"", ""PowerPoint"", ""Photoshop"", ""Tailwind"", ""Apache Flink"", ""Image Classification""], ""career_excerpt"": ""Role 1 Company: Stark Industries Title: Accountant Industry: Manufacturing Duration months: 52 Current: True Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital""}"
+CAND_0000042,HR Manager,Wayne Enterprises,Conglomerate,Berlin,Germany,5.0,"Role 1
+Company: Wayne Enterprises
+Title: HR Manager
+Industry: Conglomerate
+Duration months: 26
+Current: True
+Description: Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including some that ranked on the first page of search for high-competition keywords. Managed a freelance writer pool and the editorial calendar. Recent work has been on AI-assisted content production, using LLM tools for research, drafting, and editing while maintaining editorial quality.
+Role 2
+Company: Wipro
+Title: Business Analyst
+Industry: IT Services
+Duration months: 12
+Current: False
+Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders.
+Role 3
+Company: Infosys
+Title: Customer Support
+Industry: IT Services
+Duration months: 21
+Current: False
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.","Project Management, gRPC, Marketing, SAP, Illustrator, Node.js, YOLO, Tailwind, CSS, Figma",0.081,0.35,0.135,0.05,0.88,1.0,0.52,0.94052875,1.0,3,3,1,1,0,0,252,0.58,0.35,-1.0,30,False,True,0.3933262086403158,0.17984828246886733,0.8531885758998435,12,11,0.495056572769953,0.03771481010489525,"[""penalty_non_coding_management"", ""penalty_unrelated_current_title""]","{""current_duration_months"": 26, ""top_skills"": [""Project Management"", ""gRPC"", ""Marketing"", ""SAP"", ""Illustrator"", ""Node.js"", ""YOLO"", ""Tailwind""], ""career_excerpt"": ""Role 1 Company: Wayne Enterprises Title: HR Manager Industry: Conglomerate Duration months: 26 Current: True Description: Content writing and SEO strategy for a tech-focused publication. Wrote longform articles on developer tools, cloud platforms, and AI/ML topics — including som""}"
+CAND_0000040,Customer Support,Globex Inc,Manufacturing,"Kochi, Kerala",India,1.6,"Role 1
+Company: Globex Inc
+Title: Customer Support
+Industry: Manufacturing
+Duration months: 19
+Current: True
+Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last three years. Owned the full sales cycle: prospecting, discovery, technical evaluation (with SE support), commercial negotiation, and close. Strong on consultative selling for technical buyers; comfortable engaging with both engineering and finance stakeholders.","SQL, Spring Boot, Accounting, Rust, Redux, SAP, Weights & Biases, REST APIs, Spark",0.126,0.0,0.0,0.05,0.22857142857142854,0.65,0.2,0.9346055555555555,1.0,0,0,0,0,0,0,152,0.46,0.8,0.44,90,False,False,0.15177317590493447,0.07178027225774619,0.6194329896907216,40,37,0.2433298969072165,0.028654601658762883,"[""penalty_unrelated_current_title"", ""penalty_weak_product_ml_signal""]","{""current_duration_months"": 19, ""top_skills"": [""SQL"", ""Spring Boot"", ""Accounting"", ""Rust"", ""Redux"", ""SAP"", ""Weights & Biases"", ""REST APIs""], ""career_excerpt"": ""Role 1 Company: Globex Inc Title: Customer Support Industry: Manufacturing Duration months: 19 Current: True Description: Enterprise sales of cloud software solutions into the mid-market segment. Carried a $1.8M ARR quota and consistently delivered against it across the last thre""}"
+CAND_0000019,Project Manager,Wayne Enterprises,Conglomerate,"Trivandrum, Kerala",India,6.5,"Role 1
+Company: Wayne Enterprises
+Title: Project Manager
+Industry: Conglomerate
+Duration months: 44
+Current: True
+Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited.
+Role 2
+Company: Wayne Enterprises
+Title: Marketing Manager
+Industry: Conglomerate
+Duration months: 26
+Current: False
+Description: Mechanical engineering design role at a hardware-product company. Led the design of two product subsystems through full lifecycle: concept, DFM/DFMA review, prototype, production tooling. Comfortable with CAD (SolidWorks, Creo), FEA (ANSYS), and the typical hardware-development cadence. Worked closely with manufacturing partners on production scale-up.
+Role 3
+Company: Pied Piper
+Title: Business Analyst
+Industry: Software
+Duration months: 7
+Current: False
+Description: Brand design and creative direction at a consumer-products company. Owned brand identity (logo, visual system, typography), packaging design, and digital creative across web and social. Led the recent rebrand and managed a small external agency for production work. Comfortable across the Adobe suite, Figma, and the production side of brand and packaging design.","Figma, GraphQL, Six Sigma, Scrum, YOLO, gRPC, AWS, Azure",0.081,0.14,0.0,0.24,0.9285714285714286,0.65,0.36,0.9371004166666667,1.0,0,0,2,0,0,0,42,0.34,0.31,-1.0,60,False,False,0.202024014301478,0.05033798543444086,0.6077022204599524,37,44,0.3650106661379857,0.0277061834333804,"[""penalty_non_coding_management"", ""penalty_unrelated_current_title""]","{""current_duration_months"": 44, ""top_skills"": [""Figma"", ""GraphQL"", ""Six Sigma"", ""Scrum"", ""YOLO"", ""gRPC"", ""AWS"", ""Azure""], ""career_excerpt"": ""Role 1 Company: Wayne Enterprises Title: Project Manager Industry: Conglomerate Duration months: 44 Current: True Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and di""}"
+CAND_0000012,Operations Manager,Stark Industries,Manufacturing,"Chandigarh, Chandigarh",India,1.1,"Role 1
+Company: Stark Industries
+Title: Operations Manager
+Industry: Manufacturing
+Duration months: 13
+Current: True
+Description: Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the GL, fixed-asset register, and the audit-readiness function. Managed a team of 3 staff accountants. Built strong process discipline around the close cycle, reducing close time from 12 days to 7 over the last two years.","Azure, Airflow, AWS, gRPC, Vue.js, dbt, Agile, PowerPoint, Content Writing, Project Management",0.126,0.0,0.0,0.05,0.15714285714285714,0.65,0.2,0.8831775,1.0,0,0,0,0,0,0,247,0.16,0.42,-1.0,60,False,False,0.1430814860907121,0.06715870158122053,0.606980198019802,41,40,0.2345940594059406,0.02610571255752475,"[""penalty_unrelated_current_title"", ""penalty_weak_product_ml_signal""]","{""current_duration_months"": 13, ""top_skills"": [""Azure"", ""Airflow"", ""AWS"", ""gRPC"", ""Vue.js"", ""dbt"", ""Agile"", ""PowerPoint""], ""career_excerpt"": ""Role 1 Company: Stark Industries Title: Operations Manager Industry: Manufacturing Duration months: 13 Current: True Description: Senior accounting role at a mid-sized company — month-end close, financial reporting, statutory compliance (GAAP / Ind-AS), and tax filings. Owned the""}"
+CAND_0000027,DevOps Engineer,Infosys,IT Services,"Kolkata, West Bengal",India,3.9,"Role 1
+Company: Infosys
+Title: DevOps Engineer
+Industry: IT Services
+Duration months: 36
+Current: True
+Description: Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the customer onboarding flow which involved orchestrating multiple downstream services. Solid on the Spring ecosystem, transaction handling, and the operational side of Java services. Looking to either go deeper on distributed systems or expand into modern application stacks.
+Role 2
+Company: Wipro
+Title: DevOps Engineer
+Industry: IT Services
+Duration months: 10
+Current: False
+Description: Full-stack web application development at a SaaS company. Built React-based admin interfaces and the Node.js REST API backing them. Worked across the stack: frontend components, REST endpoint design, PostgreSQL schema, deployment via Docker/Kubernetes. Comfortable in most parts of a typical web stack though my comfort zone is the backend and database side. Recent learning has been on the testing and CI/CD discipline.","Docker, YOLO, PEFT, Webpack, Data Science, AWS, Java, Angular, Databricks, ETL, Marketing, Information Retrieval, Weights & Biases, Terraform, SAP, Illustrator",0.06,0.0,0.105,0.24,0.5571428571428572,0.65,0.0,1.0443241388888889,0.82,2,0,0,0,1,0,56,0.58,0.61,0.65,90,True,False,0.3213210360786963,0.2853802398727734,0.8252164502164502,24,6,0.372764935064935,0.019152941055127312,"[""hard_consulting_services_only""]","{""current_duration_months"": 36, ""top_skills"": [""Docker"", ""YOLO"", ""PEFT"", ""Webpack"", ""Data Science"", ""AWS"", ""Java"", ""Angular""], ""career_excerpt"": ""Role 1 Company: Infosys Title: DevOps Engineer Industry: IT Services Duration months: 36 Current: True Description: Java backend development at a large enterprise — Spring Boot microservices, Kafka for inter-service messaging, Postgres + Redis for storage. Worked on the customer ""}"
+CAND_0000047,Project Manager,TCS,IT Services,"Kochi, Kerala",India,2.4,"Role 1
+Company: TCS
+Title: Project Manager
+Industry: IT Services
+Duration months: 28
+Current: True
+Description: Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and outbound. Built and tracked the operational KPIs (on-time fulfillment, accuracy, cost per order) and led the continuous improvement initiatives that drove a 22% productivity gain over 18 months.","FastAPI, Java, Excel, Tally, SQL, Scrum, Hadoop",0.010799999999999999,0.04,0.045,0.24,0.34285714285714286,0.65,0.08,0.8945670833333332,1.0,1,1,0,0,0,0,102,0.39,0.54,0.21,90,False,False,0.0,0.005370960888563416,0.5596801346801347,50,48,0.28410404040404036,0.002744821326104544,"[""hard_consulting_services_only"", ""penalty_unrelated_current_title""]","{""current_duration_months"": 28, ""top_skills"": [""FastAPI"", ""Java"", ""Excel"", ""Tally"", ""SQL"", ""Scrum"", ""Hadoop""], ""career_excerpt"": ""Role 1 Company: TCS Title: Project Manager Industry: IT Services Duration months: 28 Current: True Description: Operations management role at a logistics company. Owned daily fulfillment operations across 3 warehouses, managing a team of 80 across receiving, picking, packing, and""}"
+CAND_0000008,Operations Manager,Wipro,IT Services,"Noida, Uttar Pradesh",India,3.6,"Role 1
+Company: Wipro
+Title: Operations Manager
+Industry: IT Services
+Duration months: 43
+Current: True
+Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed a team of 5 across content, performance marketing, and marketing operations. Worked closely with sales on lead-quality definitions and the SDR-handoff process. Recent focus has been on account-based marketing for our enterprise segment.","Java, BigQuery, Spark, Accounting, Kubernetes, TypeScript, Rust, HTML",0.007559999999999999,0.0,0.045,0.05,0.5142857142857142,1.0,0.0,0.9171675,1.0,1,0,0,0,0,0,201,0.42,0.74,-1.0,90,False,False,0.00298701404713229,0.005327926669017094,0.5596330275229358,49,49,0.26738990825688075,0.0018540244826298162,"[""hard_consulting_services_only"", ""penalty_unrelated_current_title"", ""penalty_weak_product_ml_signal""]","{""current_duration_months"": 43, ""top_skills"": [""Java"", ""BigQuery"", ""Spark"", ""Accounting"", ""Kubernetes"", ""TypeScript"", ""Rust"", ""HTML""], ""career_excerpt"": ""Role 1 Company: Wipro Title: Operations Manager Industry: IT Services Duration months: 43 Current: True Description: Marketing leadership role at a B2B SaaS company. Owned the demand-generation function — content marketing, paid acquisition, SEO, email nurture. Built and managed ""}"
+CAND_0000003,Customer Support,TCS,IT Services,Austin,USA,1.1,"Role 1
+Company: TCS
+Title: Customer Support
+Industry: IT Services
+Duration months: 13
+Current: True
+Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transformation strategy projects. Strong on stakeholder management, structured problem-solving, and the typical consulting toolkit (slide-craft, Excel modeling, executive communication). Recent project work involved AI-strategy advisory but my own technical depth in AI is limited.","Angular, SEO, Excel, Accounting, Kubernetes, Databricks",0.007559999999999999,0.0,0.0,0.05,0.15714285714285714,0.25,0.0,0.9398015277777777,1.0,0,0,0,0,0,0,103,0.46,0.86,-1.0,150,False,False,0.04862587748165987,0.0,0.5623194562446898,47,50,0.20119583687340697,0.0014294762108637423,"[""hard_consulting_services_only"", ""penalty_unrelated_current_title"", ""penalty_weak_product_ml_signal""]","{""current_duration_months"": 13, ""top_skills"": [""Angular"", ""SEO"", ""Excel"", ""Accounting"", ""Kubernetes"", ""Databricks""], ""career_excerpt"": ""Role 1 Company: TCS Title: Customer Support Industry: IT Services Duration months: 13 Current: True Description: Business analyst at a consulting firm, working primarily with retail and CPG clients. Conducted business diagnostics, process re-engineering work, and digital transfor""}"

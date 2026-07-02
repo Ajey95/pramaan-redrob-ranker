@@ -1,0 +1,35 @@
+{
+  "role_title": "Senior AI Engineer - Founding Team",
+  "required_skills": [
+    "production embeddings-based retrieval",
+    "hybrid search or vector database operations",
+    "ranking evaluation with NDCG, MRR, MAP, or A/B testing",
+    "strong Python production engineering",
+    "shipping ML systems to real users"
+  ],
+  "nice_to_have_skills": [
+    "LLM fine-tuning",
+    "learning-to-rank",
+    "HR-tech or marketplace products",
+    "distributed systems or inference optimization",
+    "open-source AI/ML contributions"
+  ],
+  "hard_disqualifiers": [
+    "pure research career with no production deployment",
+    "entire career at named consulting/services firms without product-company work"
+  ],
+  "heavy_penalties": [
+    "recent LangChain/OpenAI-only AI work under 12 months without earlier ML/IR depth",
+    "architecture/leadership role longer than 18 months without hands-on production coding",
+    "title-chasing short-tenure pattern",
+    "computer vision, speech, or robotics primary background without NLP/IR exposure"
+  ],
+  "ideal_profile": "6-8 years total experience with 4-5 years applied ML/AI at product companies, including a shipped ranking, search, retrieval, or recommendation system at scale.",
+  "preferred_locations": [
+    "Pune",
+    "Noida",
+    "Hyderabad",
+    "Mumbai",
+    "Delhi NCR"
+  ]
+}
