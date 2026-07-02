@@ -1,12 +1,17 @@
 {
-  "feature_version": "pramaan_v3_rules_rrf_2026_07_02",
+  "feature_version": "pramaan_v3_rules_rrf_minilm_2026_07_02",
   "source_candidates": "..\\India_runs_data_and_ai_challenge\\candidates.jsonl",
   "candidate_count": 100000,
   "jd_cache": "cache/jd_structured.json",
-  "created_at": "2026-07-02T04:45:45.450212+00:00",
+  "dense_backend": "two_stage_minilm",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embeddings_cache": "cache\\embeddings.npy",
+  "created_at": "2026-07-02T14:56:53.099942+00:00",
   "notes": [
     "Career-history text is weighted above skills text.",
-    "Dense TF-IDF and BM25 candidate rankings are fused with bis-compass RRF: 1/(60+rank+1).",
+    "Dense retrieval and BM25 candidate rankings are fused with bis-compass RRF: 1/(60+rank+1).",
+    "Dense retrieval prefers all-MiniLM-L6-v2 via sentence-transformers and records TF-IDF fallback if the local model is unavailable.",
+    "For two_stage_minilm, MiniLM is applied only to the top cheap-recall shortlist and cached with candidate IDs.",
     "rank.py consumes this cache and performs no model inference or network calls."
   ]
 }

@@ -26,6 +26,7 @@ from common import (
     UNRELATED_TITLE_TERMS,
     VISION_SPEECH_ROBOTICS_TERMS,
     CacheManifest,
+    RRF_K,
     bm25_scores,
     career_chunks,
     clip,
@@ -258,6 +259,7 @@ def compute_rule_features(candidate: dict[str, Any]) -> dict[str, Any]:
         "career_text": career_text,
         "skills_text": ", ".join(skill_names(candidate)),
         "semantic_doc": "\n".join([profile_text, career_text, career_text, career_text, skills_text]),
+        "embedding_doc": "\n".join([profile_text, career_text[:1600], skills_text]),
         "bm25_doc": "\n".join([career_text, career_text, profile_text, skills_text]),
         "jd_fit_gate_score": jd_fit_gate_score,
         "career_evidence_score": career_evidence_score,
@@ -315,8 +317,9 @@ def _sentence_transformer_scores(
         raise RuntimeError(f"sentence-transformers is unavailable: {exc}") from exc
 
     model = SentenceTransformer(model_name, device="cpu")
+    compact_docs = [doc[:2200] for doc in semantic_docs]
     candidate_embeddings = model.encode(
-        semantic_docs,
+        compact_docs,
         batch_size=batch_size,
         convert_to_numpy=True,
         normalize_embeddings=True,
@@ -370,17 +373,26 @@ def build_features(
     embedding_model: str = "all-MiniLM-L6-v2",
     embedding_batch_size: int = 256,
     embeddings_out: str | None = None,
+    minilm_shortlist_size: int = 5000,
 ) -> tuple[pd.DataFrame, str, str | None]:
     rows = [compute_rule_features(candidate) for candidate in candidates]
 
-    semantic_docs = [row["semantic_doc"] for row in rows]
-    dense_scores, actual_dense_backend, actual_embedding_model = _dense_scores(
-        semantic_docs,
-        dense_backend,
-        embedding_model,
-        embedding_batch_size,
-        embeddings_out,
-    )
+    if dense_backend == "two-stage-minilm":
+        dense_scores, _, _ = _tfidf_dense_scores([row["semantic_doc"] for row in rows])
+        actual_dense_backend = "two_stage_minilm"
+        actual_embedding_model = embedding_model
+    else:
+        semantic_docs = [
+            row["embedding_doc"] if dense_backend in {"auto", "sentence-transformers"} else row["semantic_doc"]
+            for row in rows
+        ]
+        dense_scores, actual_dense_backend, actual_embedding_model = _dense_scores(
+            semantic_docs,
+            dense_backend,
+            embedding_model,
+            embedding_batch_size,
+            embeddings_out,
+        )
 
     tokenized_docs = [tokenize(row["bm25_doc"]) for row in rows]
     bm25_raw = bm25_scores(tokenized_docs, tokenize(JD_QUERY + " " + " ".join(REQUIRED_TERMS)))
@@ -392,16 +404,74 @@ def build_features(
     bm25_positions = _rank_positions(bm25_ranking)
     rrf_raw = reciprocal_rank_fusion([dense_ranking, bm25_ranking], len(rows))
     rrf_norm = [score / (2.0 / 61.0) for score in rrf_raw]
+    minilm_norm = [0.0] * len(rows)
+    minilm_rrf_norm = [0.0] * len(rows)
+    minilm_positions = [0] * len(rows)
+
+    if dense_backend == "two-stage-minilm":
+        preliminary = []
+        for idx, row in enumerate(rows):
+            prelim_skill = clip(
+                0.30 * rrf_norm[idx]
+                + 0.30 * row["career_evidence_score"]
+                + 0.10 * row["jd_keyword_score"]
+                + 0.18 * row["title_score"]
+                + 0.07 * row["experience_score"]
+                + 0.05 * row["location_score"]
+            )
+            preliminary.append(
+                row["jd_fit_gate_score"]
+                * prelim_skill
+                * row["hireability_modifier"]
+                * row["consistency_modifier"]
+            )
+
+        shortlist_size = min(max(100, minilm_shortlist_size), len(rows))
+        shortlist = sorted(range(len(rows)), key=lambda idx: preliminary[idx], reverse=True)[:shortlist_size]
+        shortlist_docs = [rows[idx]["embedding_doc"] for idx in shortlist]
+        shortlist_scores, _, _ = _sentence_transformer_scores(
+            shortlist_docs,
+            embedding_model,
+            embedding_batch_size,
+            embeddings_out,
+        )
+        shortlist_norm = normalize_series(shortlist_scores)
+        for local_idx, global_idx in enumerate(shortlist):
+            minilm_norm[global_idx] = float(shortlist_norm[local_idx])
+
+        minilm_order = sorted(range(len(shortlist)), key=lambda idx: shortlist_scores[idx], reverse=True)
+        for rank, local_idx in enumerate(minilm_order, start=1):
+            global_idx = shortlist[local_idx]
+            minilm_positions[global_idx] = rank
+            minilm_rrf_norm[global_idx] = (1.0 / (RRF_K + rank)) / (1.0 / (RRF_K + 1))
+
+        if embeddings_out:
+            ids_path = Path(embeddings_out).with_suffix(".ids.json")
+            ids_path.write_text(
+                json.dumps([rows[idx]["candidate_id"] for idx in shortlist], indent=2) + "\n",
+                encoding="utf-8",
+            )
 
     for idx, row in enumerate(rows):
-        skill_match = (
-            0.30 * rrf_norm[idx]
-            + 0.30 * row["career_evidence_score"]
-            + 0.10 * row["jd_keyword_score"]
-            + 0.18 * row["title_score"]
-            + 0.07 * row["experience_score"]
-            + 0.05 * row["location_score"]
-        )
+        if dense_backend == "two-stage-minilm":
+            skill_match = (
+                0.22 * rrf_norm[idx]
+                + 0.22 * minilm_rrf_norm[idx]
+                + 0.30 * row["career_evidence_score"]
+                + 0.09 * row["jd_keyword_score"]
+                + 0.10 * row["title_score"]
+                + 0.04 * row["experience_score"]
+                + 0.03 * row["location_score"]
+            )
+        else:
+            skill_match = (
+                0.30 * rrf_norm[idx]
+                + 0.30 * row["career_evidence_score"]
+                + 0.10 * row["jd_keyword_score"]
+                + 0.18 * row["title_score"]
+                + 0.07 * row["experience_score"]
+                + 0.05 * row["location_score"]
+            )
         skill_match = clip(skill_match)
         final_score = (
             row["jd_fit_gate_score"]
@@ -414,6 +484,9 @@ def build_features(
         row["rrf_score"] = float(rrf_norm[idx])
         row["dense_rank"] = dense_positions[idx]
         row["bm25_rank"] = bm25_positions[idx]
+        row["minilm_score"] = float(minilm_norm[idx])
+        row["minilm_rank"] = minilm_positions[idx]
+        row["minilm_rrf_score"] = float(minilm_rrf_norm[idx])
         row["dense_backend"] = actual_dense_backend
         row["embedding_model"] = actual_embedding_model or ""
         row["skill_match_score"] = float(skill_match)
@@ -421,6 +494,7 @@ def build_features(
         row["flags_json"] = json.dumps(row.pop("flags"), ensure_ascii=False)
         row["evidence_json"] = json.dumps(row.pop("evidence"), ensure_ascii=False)
         row.pop("semantic_doc", None)
+        row.pop("embedding_doc", None)
         row.pop("bm25_doc", None)
 
     return pd.DataFrame(rows), actual_dense_backend, actual_embedding_model
@@ -433,10 +507,11 @@ def main() -> None:
     parser.add_argument("--manifest", default="cache/feature_manifest.json")
     parser.add_argument("--preview", default="cache/preview_top.csv")
     parser.add_argument("--jd-cache", default="cache/jd_structured.json")
-    parser.add_argument("--dense-backend", choices=["auto", "sentence-transformers", "tfidf"], default="auto")
+    parser.add_argument("--dense-backend", choices=["auto", "sentence-transformers", "tfidf", "two-stage-minilm"], default="auto")
     parser.add_argument("--embedding-model", default="all-MiniLM-L6-v2")
     parser.add_argument("--embedding-batch-size", type=int, default=256)
     parser.add_argument("--embeddings-out", default="cache/embeddings.npy")
+    parser.add_argument("--minilm-shortlist-size", type=int, default=5000)
     args = parser.parse_args()
 
     candidates = load_candidates(args.candidates)
@@ -447,6 +522,7 @@ def main() -> None:
         embedding_model=args.embedding_model,
         embedding_batch_size=args.embedding_batch_size,
         embeddings_out=embeddings_out,
+        minilm_shortlist_size=args.minilm_shortlist_size,
     )
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -460,12 +536,13 @@ def main() -> None:
         jd_cache=str(args.jd_cache),
         dense_backend=actual_dense_backend,
         embedding_model=actual_embedding_model,
-        embeddings_cache=embeddings_out if actual_dense_backend == "sentence_transformers" else None,
+        embeddings_cache=embeddings_out if actual_dense_backend in {"sentence_transformers", "two_stage_minilm"} else None,
         created_at=datetime.now(timezone.utc).isoformat(),
         notes=[
             "Career-history text is weighted above skills text.",
             "Dense retrieval and BM25 candidate rankings are fused with bis-compass RRF: 1/(60+rank+1).",
             "Dense retrieval prefers all-MiniLM-L6-v2 via sentence-transformers and records TF-IDF fallback if the local model is unavailable.",
+            "For two_stage_minilm, MiniLM is applied only to the top cheap-recall shortlist and cached with candidate IDs.",
             "rank.py consumes this cache and performs no model inference or network calls.",
         ],
     )
