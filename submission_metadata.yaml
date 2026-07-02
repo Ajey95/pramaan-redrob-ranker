@@ -1,0 +1,42 @@
+team_name: "TODO"
+
+primary_contact:
+  name: "TODO"
+  email: "TODO"
+  phone: "TODO"
+
+team_members:
+  - name: "TODO"
+    email: "TODO"
+    role: "TODO"
+
+github_repo: "TODO"
+sandbox_link: "TODO"
+reproduce_command: "python rank.py --candidates ../India_runs_data_and_ai_challenge/candidates.jsonl --out submission.csv"
+
+compute:
+  platform: "Windows local workstation"
+  cpu_cores: 0
+  ram_gb: 16
+  python_version: "3.11 tested originally; 3.14 available in managed shell"
+  os: "Windows"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 7
+
+ai_tools_used:
+  - "ChatGPT"
+
+ai_usage_summary: |
+  Used Codex/ChatGPT as an implementation assistant. The timed ranking step uses only cached local features and makes no LLM or network calls.
+
+methodology_summary: |
+  Two-phase CPU ranker. Offline scripts parse the fixed JD, score candidate career-history evidence with dense retrieval plus BM25 fused using reciprocal-rank fusion, apply explicit JD Fit Gate penalties, then multiply by Redrob hireability signals. Dense retrieval prefers all-MiniLM-L6-v2 and records TF-IDF fallback when local model dependencies are unavailable. The timed rank.py script only loads cached features and deterministic reasonings, filters to the provided candidates file, sorts, and writes the top-100 CSV.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: false
