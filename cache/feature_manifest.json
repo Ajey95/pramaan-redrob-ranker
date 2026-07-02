@@ -12,6 +12,6 @@
     "Dense retrieval and BM25 candidate rankings are fused with bis-compass RRF: 1/(60+rank+1).",
     "Dense retrieval prefers all-MiniLM-L6-v2 via sentence-transformers and records TF-IDF fallback if the local model is unavailable.",
     "For two_stage_minilm, MiniLM is applied only to the top cheap-recall shortlist and cached with candidate IDs.",
-    "rank.py consumes this cache and performs no model inference or network calls."
+    "rank.py consumes cache/runtime_rankings.csv and performs no model inference or network calls."
   ]
 }

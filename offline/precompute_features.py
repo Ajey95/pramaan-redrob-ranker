@@ -540,6 +540,7 @@ def main() -> None:
     parser.add_argument("--out", default="cache/features.parquet")
     parser.add_argument("--manifest", default="cache/feature_manifest.json")
     parser.add_argument("--preview", default="cache/preview_top.csv")
+    parser.add_argument("--runtime-rankings", default="cache/runtime_rankings.csv")
     parser.add_argument("--jd-cache", default="cache/jd_structured.json")
     parser.add_argument("--dense-backend", choices=["auto", "sentence-transformers", "tfidf", "two-stage-minilm"], default="auto")
     parser.add_argument("--embedding-model", default="all-MiniLM-L6-v2")
@@ -561,7 +562,13 @@ def main() -> None:
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     df.to_parquet(out, index=False)
-    df.sort_values(["final_score", "candidate_id"], ascending=[False, True]).head(250).to_csv(args.preview, index=False)
+    sorted_df = df.sort_values(["final_score", "candidate_id"], ascending=[False, True])
+    sorted_df.head(250).to_csv(args.preview, index=False)
+    sorted_df[["candidate_id", "final_score"]].to_csv(
+        args.runtime_rankings,
+        index=False,
+        float_format="%.15f",
+    )
 
     manifest = CacheManifest(
         feature_version=FEATURE_VERSION,
@@ -577,12 +584,13 @@ def main() -> None:
             "Dense retrieval and BM25 candidate rankings are fused with bis-compass RRF: 1/(60+rank+1).",
             "Dense retrieval prefers all-MiniLM-L6-v2 via sentence-transformers and records TF-IDF fallback if the local model is unavailable.",
             "For two_stage_minilm, MiniLM is applied only to the top cheap-recall shortlist and cached with candidate IDs.",
-            "rank.py consumes this cache and performs no model inference or network calls.",
+            "rank.py consumes cache/runtime_rankings.csv and performs no model inference or network calls.",
         ],
     )
     write_json_validated(manifest, args.manifest)
     print(f"Wrote {len(df)} feature rows to {out}")
     print(f"Preview: {args.preview}")
+    print(f"Runtime rankings: {args.runtime_rankings}")
 
 
 if __name__ == "__main__":

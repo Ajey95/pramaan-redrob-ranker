@@ -2,12 +2,31 @@ from __future__ import annotations
 
 import argparse
 import csv
+import gzip
 import json
+import re
 from pathlib import Path
 
-import pandas as pd
+CID_RE = re.compile(r'"candidate_id"\s*:\s*"([^"]+)"')
 
-from offline.common import iter_candidate_ids
+
+def iter_candidate_ids(path: str | Path):
+    path = Path(path)
+    if path.suffix == ".json":
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for candidate in data:
+            yield candidate["candidate_id"]
+        return
+    opener = gzip.open if path.suffix == ".gz" else open
+    with opener(path, "rt", encoding="utf-8") as f:
+        for line in f:
+            if not line.strip():
+                continue
+            match = CID_RE.search(line)
+            if match:
+                yield match.group(1)
+            else:
+                yield json.loads(line)["candidate_id"]
 
 
 def load_reasonings(path: Path) -> dict[str, str]:
@@ -17,21 +36,36 @@ def load_reasonings(path: Path) -> dict[str, str]:
     return data.get("reasonings", data)
 
 
+def load_runtime_rankings(path: Path) -> list[tuple[str, float]]:
+    if not path.exists():
+        raise FileNotFoundError(
+            f"Missing runtime ranking cache: {path}. "
+            "Run offline/precompute_features.py and export cache/runtime_rankings.csv before ranking."
+        )
+    rankings: list[tuple[str, float]] = []
+    with path.open("r", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            rankings.append((row["candidate_id"], float(row["final_score"])))
+    return rankings
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--candidates", required=True)
     parser.add_argument("--out", required=True)
-    parser.add_argument("--features", default="cache/features.parquet")
+    parser.add_argument("--ranking-cache", default="cache/runtime_rankings.csv")
     parser.add_argument("--reasoning-cache", default="cache/reasoning_cache.json")
     args = parser.parse_args()
 
     candidate_ids = set(iter_candidate_ids(args.candidates))
-    features = pd.read_parquet(args.features)
-    features = features[features["candidate_id"].isin(candidate_ids)].copy()
-    if len(features) < 100:
-        raise RuntimeError(f"Need at least 100 cached candidates, found {len(features)}")
-
-    ranked = features.sort_values(["final_score", "candidate_id"], ascending=[False, True]).head(100)
+    ranked = [
+        (cid, score)
+        for cid, score in load_runtime_rankings(Path(args.ranking_cache))
+        if cid in candidate_ids
+    ][:100]
+    if len(ranked) < 100:
+        raise RuntimeError(f"Need at least 100 cached candidates, found {len(ranked)}")
     reasonings = load_reasonings(Path(args.reasoning_cache))
 
     out_path = Path(args.out)
@@ -39,9 +73,7 @@ def main() -> None:
     with out_path.open("w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["candidate_id", "rank", "score", "reasoning"])
-        for rank, (_, row) in enumerate(ranked.iterrows(), start=1):
-            cid = row["candidate_id"]
-            raw_score = float(row["final_score"])
+        for rank, (cid, raw_score) in enumerate(ranked, start=1):
             score = max(0.0, raw_score - rank * 1e-12)
             reasoning = reasonings.get(
                 cid,

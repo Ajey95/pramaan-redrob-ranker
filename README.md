@@ -9,7 +9,7 @@ Production-style candidate discovery for the Redrob Intelligent Candidate Discov
 
 ## Executive Summary
 
-Pramaan ranks 100,000 Redrob candidates for the Senior AI Engineer founding-team JD with a two-phase architecture. The offline phase does the expensive work: career-history feature extraction, BM25, cheap full-pool recall, two-stage `all-MiniLM-L6-v2` semantic scoring on the top 1,000 shortlist, JD Fit Gate penalties, Redrob hireability modifiers, and grounded reasoning generation. The timed phase is intentionally simple: `rank.py` loads cached artifacts, filters to the supplied candidate file, sorts deterministically, and writes the required 100-row CSV.
+Pramaan ranks 100,000 Redrob candidates for the Senior AI Engineer founding-team JD with a two-phase architecture. The offline phase does the expensive work: career-history feature extraction, BM25, cheap full-pool recall, two-stage `all-MiniLM-L6-v2` semantic scoring on the top 1,000 shortlist, JD Fit Gate penalties, Redrob hireability modifiers, and grounded reasoning generation. The timed phase is intentionally small: `rank.py` scans candidate IDs, reads the pre-sorted runtime cache, attaches cached reasonings, and writes the required 100-row CSV.
 
 The design follows the JD's main warning: **career-history evidence beats skills-keyword stuffing**. A profile that shipped ranking, search, recommendation, retrieval, or evaluation systems is favored over a candidate with fashionable AI terms but unrelated work.
 
@@ -19,7 +19,7 @@ The design follows the JD's main warning: **career-history evidence beats skills
 | --- | --- |
 | Final CSV | `submission.csv` generated |
 | Organizer validator | Passing |
-| Timed ranking step | 9.55 seconds on full 100k local run |
+| Timed ranking step | 2.31 seconds on full 100k local run |
 | Offline dense model | Two-stage `all-MiniLM-L6-v2` on top 1,000 shortlist |
 | Full-pool recall | BM25 + TF-IDF + JD/rule features |
 | Reasoning cache | 150 candidates |
@@ -41,8 +41,9 @@ flowchart TB
     F --> G["MiniLM Semantic Pass<br/>all-MiniLM-L6-v2 CPU embeddings"]
     G --> H["RRF Fusion<br/>1 / (60 + rank)"]
     H --> I["Final Cached Features<br/>features.parquet + embeddings.npy"]
+    I --> T["Runtime Ranking Cache<br/>runtime_rankings.csv"]
     I --> K["Offline Reasoning Cache<br/>top 150 grounded explanations"]
-    I --> R["rank.py<br/>load, filter, sort, write CSV"]
+    T --> R["rank.py<br/>scan IDs, filter cache, write CSV"]
     K --> R
     R --> S["submission.csv<br/>100 rows, valid format"]
 ```
@@ -54,7 +55,7 @@ flowchart TB
 | Offline | `offline/jd_understanding.py` | Parse fixed JD into structured criteria | Optional, fallback deterministic |
 | Offline | `offline/precompute_features.py` | Build full-pool recall, MiniLM shortlist embeddings, JD gates, final scores | No hosted LLM needed |
 | Offline | `offline/generate_reasoning.py` | Generate grounded top-150 reasonings | Optional, fallback deterministic |
-| Timed | `rank.py` | Load cache, filter candidate IDs, sort, write CSV | Never |
+| Timed | `rank.py` | Scan candidate IDs, filter pre-sorted runtime cache, write CSV | Never |
 
 ## Reproduction
 
@@ -77,6 +78,7 @@ HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 .venv312/Scripts/python offline/precompu
   --out cache/features.parquet \
   --manifest cache/feature_manifest.json \
   --preview cache/preview_top.csv \
+  --runtime-rankings cache/runtime_rankings.csv \
   --dense-backend two-stage-minilm \
   --embedding-model all-MiniLM-L6-v2 \
   --embeddings-out cache/embeddings.npy \
@@ -119,7 +121,7 @@ flowchart LR
     E --> F["Top 100 submission"]
 ```
 
-This keeps semantic scoring focused where it matters while preserving full-pool recall. The timed `rank.py` still performs no model inference.
+This keeps semantic scoring focused where it matters while preserving full-pool recall. The timed `rank.py` performs no model inference and does not import pandas or pyarrow.
 
 ## Scoring Formula
 
@@ -162,6 +164,7 @@ final_score =
 | Artifact | Purpose |
 | --- | --- |
 | `cache/features.parquet` | full candidate feature table and final scores |
+| `cache/runtime_rankings.csv` | pre-sorted candidate IDs and scores consumed by `rank.py` |
 | `cache/embeddings.npy` | MiniLM embeddings for the shortlist |
 | `cache/embeddings.ids.json` | candidate IDs corresponding to shortlist embeddings |
 | `cache/reasoning_cache.json` | grounded reasoning for top 150 |
