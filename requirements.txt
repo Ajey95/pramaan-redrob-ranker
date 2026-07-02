@@ -1,0 +1,7 @@
+numpy>=2.2
+pandas>=2.3
+pyarrow>=18
+pydantic>=2.10
+scikit-learn>=1.7
+sentence-transformers>=3.3
+streamlit>=1.41

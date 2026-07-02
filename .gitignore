@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.venv*/
+*.log
+
+# Raw organizer data is documented as external input.
+candidates.jsonl
+candidates.jsonl.gz
+
+# Keep curated cache artifacts by default; uncomment locally if rebuilding.
+# cache/
