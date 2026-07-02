@@ -1,17 +1,17 @@
-team_name: "TODO"
+team_name: "Harley"
 
 primary_contact:
-  name: "TODO"
-  email: "TODO"
-  phone: "TODO"
+  name: "V Ajay Bhargava Jashwanth Reddy"
+  email: "983617reddy@gmail.com"
+  phone: "6302961169"
 
 team_members:
-  - name: "TODO"
-    email: "TODO"
-    role: "TODO"
+  - name: "Ashish M"
+    email: "ashish007tup@gmail.com"
+    role: "Developer"
 
 github_repo: "https://github.com/Ajey95/pramaan-redrob-ranker"
-sandbox_link: "TODO"
+sandbox_link: "https://pramaan-redrob-ranker.streamlit.app/"
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
 compute:
