@@ -9,5 +9,8 @@ Run locally:
 streamlit run sandbox/app.py
 ```
 
-The sandbox intentionally uses the TF-IDF dense fallback for fast hosted execution.
-The full offline pipeline can use `all-MiniLM-L6-v2` through `sentence-transformers`.
+The sandbox intentionally uses the fast local scoring path for hosted verification. The full submission cache uses the offline two-stage MiniLM pipeline:
+
+1. BM25 + TF-IDF + JD Fit Gate full-pool recall.
+2. `all-MiniLM-L6-v2` semantic scoring on a top-1000 shortlist.
+3. Cached features consumed by `rank.py`.
