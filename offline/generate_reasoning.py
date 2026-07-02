@@ -9,7 +9,10 @@ from pathlib import Path
 
 import pandas as pd
 
-from common import CORE_AI_TERMS, ReasoningCache, format_pct, load_candidates, write_json_validated
+try:
+    from .common import CORE_AI_TERMS, ReasoningCache, format_pct, load_candidates, write_json_validated
+except ImportError:  # pragma: no cover - supports direct script execution
+    from common import CORE_AI_TERMS, ReasoningCache, format_pct, load_candidates, write_json_validated
 
 
 def _candidate_map(path: str) -> dict[str, dict]:

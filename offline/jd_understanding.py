@@ -7,7 +7,10 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-from common import JDStructured, write_json_validated
+try:
+    from .common import JDStructured, write_json_validated
+except ImportError:  # pragma: no cover - supports direct script execution
+    from common import JDStructured, write_json_validated
 
 
 def build_structured_jd(jd_text: str) -> JDStructured:
